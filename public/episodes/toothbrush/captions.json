@@ -1,0 +1,622 @@
+[
+{
+"text": "STOP",
+"startMs": 160,
+"endMs": 480
+},
+{
+"text": "brushing!",
+"startMs": 640,
+"endMs": 1520
+},
+{
+"text": "Your",
+"startMs": 1960,
+"endMs": 2000
+},
+{
+"text": "toothbrush",
+"startMs": 2080,
+"endMs": 2640
+},
+{
+"text": "has",
+"startMs": 2720,
+"endMs": 2800
+},
+{
+"text": "a",
+"startMs": 2880,
+"endMs": 3000
+},
+{
+"text": "CRIMINAL",
+"startMs": 3120,
+"endMs": 3600
+},
+{
+"text": "record.",
+"startMs": 3680,
+"endMs": 4360
+},
+{
+"text": "Okay,",
+"startMs": 4640,
+"endMs": 5160
+},
+{
+"text": "rewind.",
+"startMs": 5280,
+"endMs": 6040
+},
+{
+"text": "Five",
+"startMs": 6240,
+"endMs": 6400
+},
+{
+"text": "thousand",
+"startMs": 6480,
+"endMs": 6800
+},
+{
+"text": "years",
+"startMs": 6880,
+"endMs": 7040
+},
+{
+"text": "ago?",
+"startMs": 7120,
+"endMs": 7600
+},
+{
+"text": "People",
+"startMs": 7760,
+"endMs": 8000
+},
+{
+"text": "chewed",
+"startMs": 8080,
+"endMs": 8320
+},
+{
+"text": "on",
+"startMs": 8400,
+"endMs": 8480
+},
+{
+"text": "a",
+"startMs": 8560,
+"endMs": 8640
+},
+{
+"text": "stick.",
+"startMs": 8720,
+"endMs": 9440
+},
+{
+"text": "A",
+"startMs": 9520,
+"endMs": 9680
+},
+{
+"text": "STICK.",
+"startMs": 9840,
+"endMs": 10600
+},
+{
+"text": "Breakfast",
+"startMs": 11480,
+"endMs": 12000
+},
+{
+"text": "AND",
+"startMs": 12160,
+"endMs": 12400
+},
+{
+"text": "dental",
+"startMs": 12560,
+"endMs": 12800
+},
+{
+"text": "care.",
+"startMs": 12880,
+"endMs": 13440
+},
+{
+"text": "Then",
+"startMs": 13680,
+"endMs": 14000
+},
+{
+"text": "in",
+"startMs": 14160,
+"endMs": 14320
+},
+{
+"text": "1498,",
+"startMs": 14440,
+"endMs": 15440
+},
+{
+"text": "China",
+"startMs": 15600,
+"endMs": 15760
+},
+{
+"text": "upgrades:",
+"startMs": 15840,
+"endMs": 16720
+},
+{
+"text": "a",
+"startMs": 16840,
+"endMs": 16960
+},
+{
+"text": "bone",
+"startMs": 17080,
+"endMs": 17200
+},
+{
+"text": "handle...",
+"startMs": 17280,
+"endMs": 18000
+},
+{
+"text": "with",
+"startMs": 18120,
+"endMs": 18240
+},
+{
+"text": "bristles",
+"startMs": 18280,
+"endMs": 18640
+},
+{
+"text": "ripped",
+"startMs": 18880,
+"endMs": 19120
+},
+{
+"text": "off",
+"startMs": 19200,
+"endMs": 19280
+},
+{
+"text": "the",
+"startMs": 19360,
+"endMs": 19440
+},
+{
+"text": "necks",
+"startMs": 19520,
+"endMs": 19760
+},
+{
+"text": "of",
+"startMs": 19840,
+"endMs": 19920
+},
+{
+"text": "Siberian",
+"startMs": 20000,
+"endMs": 20640
+},
+{
+"text": "pigs.",
+"startMs": 20720,
+"endMs": 21360
+},
+{
+"text": "Minty",
+"startMs": 21600,
+"endMs": 21920
+},
+{
+"text": "fresh?",
+"startMs": 22080,
+"endMs": 22560
+},
+{
+"text": "Ha.",
+"startMs": 22800,
+"endMs": 23120
+},
+{
+"text": "No.",
+"startMs": 23520,
+"endMs": 24040
+},
+{
+"text": "Now,",
+"startMs": 24320,
+"endMs": 24560
+},
+{
+"text": "1770.",
+"startMs": 24800,
+"endMs": 25920
+},
+{
+"text": "An",
+"startMs": 26080,
+"endMs": 26160
+},
+{
+"text": "Englishman",
+"startMs": 26240,
+"endMs": 26800
+},
+{
+"text": "named",
+"startMs": 26920,
+"endMs": 27040
+},
+{
+"text": "William",
+"startMs": 27120,
+"endMs": 27440
+},
+{
+"text": "Addis",
+"startMs": 27520,
+"endMs": 27920
+},
+{
+"text": "gets",
+"startMs": 28040,
+"endMs": 28160
+},
+{
+"text": "thrown",
+"startMs": 28240,
+"endMs": 28480
+},
+{
+"text": "in",
+"startMs": 28560,
+"endMs": 28640
+},
+{
+"text": "jail",
+"startMs": 28680,
+"endMs": 28880
+},
+{
+"text": "for",
+"startMs": 28960,
+"endMs": 29040
+},
+{
+"text": "starting",
+"startMs": 29120,
+"endMs": 29360
+},
+{
+"text": "a",
+"startMs": 29440,
+"endMs": 29480
+},
+{
+"text": "riot.",
+"startMs": 29520,
+"endMs": 30240
+},
+{
+"text": "Bored",
+"startMs": 30280,
+"endMs": 30560
+},
+{
+"text": "out",
+"startMs": 30600,
+"endMs": 30640
+},
+{
+"text": "of",
+"startMs": 30720,
+"endMs": 30760
+},
+{
+"text": "his",
+"startMs": 30800,
+"endMs": 30880
+},
+{
+"text": "mind,",
+"startMs": 31040,
+"endMs": 31440
+},
+{
+"text": "he",
+"startMs": 31560,
+"endMs": 31680
+},
+{
+"text": "saves",
+"startMs": 31720,
+"endMs": 31920
+},
+{
+"text": "a",
+"startMs": 32000,
+"endMs": 32040
+},
+{
+"text": "bone",
+"startMs": 32080,
+"endMs": 32240
+},
+{
+"text": "from",
+"startMs": 32320,
+"endMs": 32400
+},
+{
+"text": "dinner,",
+"startMs": 32480,
+"endMs": 33040
+},
+{
+"text": "sweet-talks",
+"startMs": 33120,
+"endMs": 33600
+},
+{
+"text": "a",
+"startMs": 33640,
+"endMs": 33680
+},
+{
+"text": "guard",
+"startMs": 33760,
+"endMs": 33920
+},
+{
+"text": "for",
+"startMs": 34000,
+"endMs": 34080
+},
+{
+"text": "some",
+"startMs": 34160,
+"endMs": 34240
+},
+{
+"text": "bristles,",
+"startMs": 34320,
+"endMs": 34960
+},
+{
+"text": "and",
+"startMs": 35080,
+"endMs": 35200
+},
+{
+"text": "BOOM.",
+"startMs": 35520,
+"endMs": 35920
+},
+{
+"text": "The",
+"startMs": 36227,
+"endMs": 36240
+},
+{
+"text": "modern",
+"startMs": 36400,
+"endMs": 36720
+},
+{
+"text": "toothbrush.",
+"startMs": 36800,
+"endMs": 37560
+},
+{
+"text": "Invented.",
+"startMs": 37680,
+"endMs": 38560
+},
+{
+"text": "In",
+"startMs": 38720,
+"endMs": 38880
+},
+{
+"text": "JAIL.",
+"startMs": 39120,
+"endMs": 39600
+},
+{
+"text": "He",
+"startMs": 39920,
+"endMs": 40000
+},
+{
+"text": "gets",
+"startMs": 40080,
+"endMs": 40320
+},
+{
+"text": "out,",
+"startMs": 40400,
+"endMs": 40800
+},
+{
+"text": "starts",
+"startMs": 40960,
+"endMs": 41120
+},
+{
+"text": "a",
+"startMs": 41160,
+"endMs": 41200
+},
+{
+"text": "toothbrush",
+"startMs": 41280,
+"endMs": 41680
+},
+{
+"text": "company,",
+"startMs": 41760,
+"endMs": 42240
+},
+{
+"text": "and",
+"startMs": 42320,
+"endMs": 42400
+},
+{
+"text": "it",
+"startMs": 42440,
+"endMs": 42480
+},
+{
+"text": "is",
+"startMs": 42560,
+"endMs": 42720
+},
+{
+"text": "STILL",
+"startMs": 42800,
+"endMs": 43200
+},
+{
+"text": "around",
+"startMs": 43280,
+"endMs": 43600
+},
+{
+"text": "today.",
+"startMs": 43680,
+"endMs": 44080
+},
+{
+"text": "Then",
+"startMs": 44480,
+"endMs": 44720
+},
+{
+"text": "in",
+"startMs": 44880,
+"endMs": 44960
+},
+{
+"text": "1938,",
+"startMs": 45040,
+"endMs": 46080
+},
+{
+"text": "nylon",
+"startMs": 46160,
+"endMs": 46560
+},
+{
+"text": "finally",
+"startMs": 46800,
+"endMs": 47200
+},
+{
+"text": "replaces",
+"startMs": 47280,
+"endMs": 47680
+},
+{
+"text": "the",
+"startMs": 47760,
+"endMs": 47800
+},
+{
+"text": "pig",
+"startMs": 47840,
+"endMs": 48000
+},
+{
+"text": "hair.",
+"startMs": 48080,
+"endMs": 48480
+},
+{
+"text": "You're",
+"startMs": 49440,
+"endMs": 49600
+},
+{
+"text": "welcome,",
+"startMs": 49760,
+"endMs": 50000
+},
+{
+"text": "gums.",
+"startMs": 50040,
+"endMs": 50680
+},
+{
+"text": "So",
+"startMs": 51072,
+"endMs": 51120
+},
+{
+"text": "tonight",
+"startMs": 51280,
+"endMs": 51520
+},
+{
+"text": "when",
+"startMs": 51600,
+"endMs": 51680
+},
+{
+"text": "you",
+"startMs": 51760,
+"endMs": 51800
+},
+{
+"text": "brush?",
+"startMs": 51840,
+"endMs": 52440
+},
+{
+"text": "Thank",
+"startMs": 52640,
+"endMs": 52800
+},
+{
+"text": "a",
+"startMs": 52880,
+"endMs": 52920
+},
+{
+"text": "rioter.",
+"startMs": 52960,
+"endMs": 53600
+},
+{
+"text": "And",
+"startMs": 53897,
+"endMs": 53920
+},
+{
+"text": "one",
+"startMs": 54080,
+"endMs": 54320
+},
+{
+"text": "very",
+"startMs": 54560,
+"endMs": 54800
+},
+{
+"text": "nervous",
+"startMs": 54960,
+"endMs": 55360
+},
+{
+"text": "pig.",
+"startMs": 55440,
+"endMs": 56080
+}
+]

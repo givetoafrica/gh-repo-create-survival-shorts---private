@@ -1,0 +1,986 @@
+{
+ "id": "toothbrush",
+ "title": "Your toothbrush was invented in JAIL",
+ "theme": "classic",
+ "voice": "episodes/toothbrush/voice.mp3",
+ "captions": "episodes/toothbrush/captions.json",
+ "duck": {
+  "at": "bored",
+  "x": 1000,
+  "y": 1352,
+  "dur": 3.2,
+  "scale": 0.5
+ },
+ "scenes": [
+  {
+   "at": "stop",
+   "fx": [
+    "shake",
+    "flash",
+    "speedlines"
+   ],
+   "figures": [
+    {
+     "x": 540,
+     "from": -200,
+     "enterDur": 0.3,
+     "scale": 1.5,
+     "head": "hero",
+     "acts": [
+      {
+       "t": 0,
+       "a": "run"
+      },
+      {
+       "t": 0.3,
+       "a": "slam"
+      },
+      {
+       "t": 0.9,
+       "a": "sassy"
+      }
+     ]
+    }
+   ],
+   "texts": [
+    {
+     "text": "STOP!",
+     "y": 560,
+     "size": 260,
+     "t": 0.12
+    }
+   ]
+  },
+  {
+   "at": "your toothbrush",
+   "sfx": "thud",
+   "props": [
+    {
+     "name": "mugshot",
+     "x": 640,
+     "y": 860,
+     "scale": 1,
+     "enter": "none",
+     "idle": "none",
+     "label": "CRIMINAL",
+     "behind": true
+    },
+    {
+     "name": "toothbrush",
+     "x": 690,
+     "y": 860,
+     "scale": 1.7,
+     "rot": 8,
+     "enter": "drop",
+     "idle": "wobble"
+    }
+   ],
+   "figures": [
+    {
+     "x": 240,
+     "scale": 1.2,
+     "head": "hero",
+     "acts": [
+      {
+       "t": 0,
+       "a": "point"
+      },
+      {
+       "t": 1.2,
+       "a": "sassy"
+      }
+     ],
+     "emotes": [
+      {
+       "t": 1.1,
+       "e": "!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "okay rewind",
+   "fx": [
+    "rewind"
+   ],
+   "zoom": 0.02,
+   "figures": [
+    {
+     "x": 300,
+     "from": 900,
+     "enterDur": 1.2,
+     "scale": 1.3,
+     "head": "hero",
+     "flip": true,
+     "acts": [
+      {
+       "t": 0,
+       "a": "run"
+      },
+      {
+       "t": 1.1,
+       "a": "talk"
+      }
+     ]
+    }
+   ],
+   "texts": [
+    {
+     "text": "REWIND",
+     "y": 520,
+     "size": 170,
+     "style": "pop",
+     "color": "ink"
+    }
+   ],
+   "set": "none",
+   "cam": "normal"
+  },
+  {
+   "at": "five thousand",
+   "texts": [
+    {
+     "text": "5,000",
+     "y": 470,
+     "size": 230,
+     "sub": "YEARS AGO",
+     "style": "stamp",
+     "rot": -6
+    }
+   ],
+   "figures": [
+    {
+     "x": 560,
+     "from": 1250,
+     "enterDur": 0.6,
+     "scale": 1.35,
+     "acts": [
+      {
+       "t": 0,
+       "a": "walk"
+      },
+      {
+       "t": 0.6,
+       "a": "idle"
+      }
+     ],
+     "emotes": [
+      {
+       "t": 0.8,
+       "e": "?"
+      }
+     ],
+     "who": "caveman"
+    }
+   ],
+   "set": "cave"
+  },
+  {
+   "at": "people chewed",
+   "zoom": 0.08,
+   "figures": [
+    {
+     "x": 540,
+     "scale": 1.6,
+     "holding": "twig",
+     "holdingScale": 0.5,
+     "holdingRot": 90,
+     "acts": [
+      {
+       "t": 0,
+       "a": "chew"
+      }
+     ],
+     "who": "caveman"
+    }
+   ],
+   "set": "cave",
+   "cam": "close"
+  },
+  {
+   "at": "stick a stick",
+   "fx": [
+    "punch",
+    "speedlines"
+   ],
+   "sfx": "pop",
+   "props": [
+    {
+     "name": "twig",
+     "x": 540,
+     "y": 820,
+     "scale": 2.6,
+     "rot": 20,
+     "enter": "slam",
+     "idle": "wobble"
+    }
+   ],
+   "figures": [
+    {
+     "x": 900,
+     "scale": 1.1,
+     "head": "hero",
+     "acts": [
+      {
+       "t": 0,
+       "a": "shock"
+      }
+     ],
+     "emotes": [
+      {
+       "t": 0.1,
+       "e": "!!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "breakfast",
+   "figures": [
+    {
+     "x": 330,
+     "scale": 1.3,
+     "holding": "twig",
+     "holdingScale": 0.5,
+     "holdingRot": 90,
+     "acts": [
+      {
+       "t": 0,
+       "a": "chew"
+      }
+     ],
+     "who": "caveman"
+    },
+    {
+     "x": 780,
+     "scale": 1.3,
+     "head": "hero",
+     "flip": true,
+     "acts": [
+      {
+       "t": 0,
+       "a": "shrug"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "name": "plate",
+     "x": 540,
+     "y": 1150,
+     "scale": 0.9,
+     "enter": "pop",
+     "idle": "none"
+    }
+   ],
+   "set": "cave"
+  },
+  {
+   "at": "then in 1498",
+   "sfx": "thud",
+   "fx": [
+    "shake"
+   ],
+   "texts": [
+    {
+     "text": "1498",
+     "y": 470,
+     "size": 250,
+     "t": 0.35
+    },
+    {
+     "text": "CHINA",
+     "y": 640,
+     "size": 90,
+     "style": "pop",
+     "color": "ink",
+     "t": 0.9
+    }
+   ],
+   "figures": [
+    {
+     "x": 260,
+     "scale": 1.2,
+     "head": "hero",
+     "acts": [
+      {
+       "t": 0,
+       "a": "pointUp"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "name": "bonebrush",
+     "x": 760,
+     "y": 960,
+     "scale": 1.4,
+     "rot": 15,
+     "t": 1.6,
+     "enter": "pop"
+    }
+   ],
+   "set": "palace"
+  },
+  {
+   "at": "with bristles",
+   "props": [
+    {
+     "name": "pig",
+     "x": 640,
+     "y": 1080,
+     "scale": 1.3,
+     "enter": "slideR",
+     "idle": "trot"
+    }
+   ],
+   "figures": [
+    {
+     "x": 210,
+     "scale": 1.2,
+     "head": "hero",
+     "acts": [
+      {
+       "t": 0,
+       "a": "point"
+      },
+      {
+       "t": 1.2,
+       "a": "disgust"
+      }
+     ],
+     "emotes": [
+      {
+       "t": 1.4,
+       "e": "sweat"
+      }
+     ]
+    }
+   ],
+   "texts": [
+    {
+     "text": "SIBERIAN PIGS",
+     "y": 520,
+     "size": 120,
+     "t": 1.7,
+     "style": "pop",
+     "color": "ink"
+    }
+   ],
+   "set": "palace"
+  },
+  {
+   "at": "minty",
+   "fx": [
+    "punch"
+   ],
+   "figures": [
+    {
+     "x": 540,
+     "scale": 1.5,
+     "head": "hero",
+     "acts": [
+      {
+       "t": 0,
+       "a": "facepalm"
+      },
+      {
+       "t": 1.3,
+       "a": "sassy"
+      }
+     ]
+    }
+   ],
+   "texts": [
+    {
+     "text": "MINTY FRESH?",
+     "y": 470,
+     "size": 120,
+     "style": "pop",
+     "color": "ink"
+    },
+    {
+     "text": "NOPE",
+     "y": 640,
+     "size": 170,
+     "style": "stamp",
+     "t": 1.3
+    }
+   ],
+   "cam": "close"
+  },
+  {
+   "at": "now 1770",
+   "sfx": "thud",
+   "fx": [
+    "shake"
+   ],
+   "texts": [
+    {
+     "text": "1770",
+     "y": 470,
+     "size": 250,
+     "t": 0.25
+    },
+    {
+     "text": "ENGLAND",
+     "y": 640,
+     "size": 90,
+     "style": "pop",
+     "color": "ink",
+     "t": 1.0
+    }
+   ],
+   "figures": [
+    {
+     "x": 540,
+     "from": -200,
+     "enterDur": 0.8,
+     "scale": 1.3,
+     "acts": [
+      {
+       "t": 0,
+       "a": "walk"
+      },
+      {
+       "t": 0.8,
+       "a": "idle"
+      }
+     ],
+     "who": "gentleman"
+    }
+   ],
+   "set": "street"
+  },
+  {
+   "at": "gets thrown",
+   "fx": [
+    "shake"
+   ],
+   "sfx": "thud",
+   "figures": [
+    {
+     "x": 540,
+     "scale": 1.3,
+     "acts": [
+      {
+       "t": 0,
+       "a": "scared"
+      }
+     ],
+     "emotes": [
+      {
+       "t": 0.3,
+       "e": "!"
+      }
+     ],
+     "who": "gentleman"
+    },
+    {
+     "x": 900,
+     "scale": 1.0,
+     "flip": true,
+     "acts": [
+      {
+       "t": 0,
+       "a": "point"
+      }
+     ],
+     "who": "jailer"
+    }
+   ],
+   "props": [
+    {
+     "name": "bars",
+     "x": 540,
+     "y": 940,
+     "scale": 1.0,
+     "enter": "drop",
+     "idle": "none"
+    }
+   ],
+   "texts": [
+    {
+     "text": "RIOT",
+     "x": 230,
+     "y": 470,
+     "size": 140,
+     "style": "stamp",
+     "rot": -12,
+     "t": 1.0
+    }
+   ],
+   "set": "prison"
+  },
+  {
+   "at": "bored",
+   "zoom": 0.1,
+   "figures": [
+    {
+     "x": 540,
+     "scale": 1.3,
+     "acts": [
+      {
+       "t": 0,
+       "a": "sit"
+      }
+     ],
+     "emotes": [
+      {
+       "t": 0.2,
+       "e": "dots",
+       "dur": 1.6
+      }
+     ],
+     "who": "gentleman"
+    }
+   ],
+   "props": [
+    {
+     "name": "bars",
+     "x": 540,
+     "y": 940,
+     "enter": "none",
+     "idle": "none"
+    }
+   ],
+   "set": "prison",
+   "cam": "close"
+  },
+  {
+   "at": "he saves",
+   "figures": [
+    {
+     "x": 540,
+     "scale": 1.3,
+     "holding": "bone",
+     "holdingScale": 0.45,
+     "acts": [
+      {
+       "t": 0,
+       "a": "present"
+      }
+     ],
+     "emotes": [
+      {
+       "t": 0.2,
+       "e": "sparkle"
+      }
+     ],
+     "who": "gentleman"
+    }
+   ],
+   "props": [
+    {
+     "name": "bars",
+     "x": 540,
+     "y": 940,
+     "enter": "none",
+     "idle": "none",
+     "behind": true
+    }
+   ],
+   "set": "prison"
+  },
+  {
+   "at": "sweet-talks",
+   "figures": [
+    {
+     "x": 400,
+     "scale": 1.25,
+     "acts": [
+      {
+       "t": 0,
+       "a": "talk"
+      }
+     ],
+     "emotes": [
+      {
+       "t": 0.3,
+       "e": "heart"
+      }
+     ],
+     "who": "gentleman"
+    },
+    {
+     "x": 800,
+     "scale": 1.25,
+     "flip": true,
+     "acts": [
+      {
+       "t": 0,
+       "a": "shrug"
+      }
+     ],
+     "emotes": [
+      {
+       "t": 0.9,
+       "e": "?"
+      }
+     ],
+     "who": "jailer"
+    }
+   ],
+   "props": [
+    {
+     "name": "bars",
+     "x": 400,
+     "y": 940,
+     "scale": 0.8,
+     "enter": "none",
+     "idle": "none"
+    }
+   ],
+   "set": "prison"
+  },
+  {
+   "at": "boom",
+   "lead": 0.05,
+   "fx": [
+    "flash",
+    "shake",
+    "speedlines"
+   ],
+   "sfx": "thud",
+   "figures": [
+    {
+     "x": 540,
+     "scale": 1.5,
+     "holding": "toothbrush",
+     "holdingScale": 0.55,
+     "acts": [
+      {
+       "t": 0,
+       "a": "flex"
+      }
+     ],
+     "emotes": [
+      {
+       "t": 0.1,
+       "e": "sparkle",
+       "dur": 2
+      }
+     ],
+     "who": "gentleman"
+    }
+   ],
+   "texts": [
+    {
+     "text": "BOOM",
+     "y": 470,
+     "size": 250
+    }
+   ],
+   "set": "prison",
+   "cam": "close"
+  },
+  {
+   "at": "invented",
+   "figures": [
+    {
+     "x": 680,
+     "scale": 1.2,
+     "holding": "toothbrush",
+     "holdingScale": 0.5,
+     "acts": [
+      {
+       "t": 0,
+       "a": "celebrate"
+      }
+     ],
+     "who": "gentleman"
+    },
+    {
+     "x": 190,
+     "scale": 1.1,
+     "head": "hero",
+     "acts": [
+      {
+       "t": 0,
+       "a": "point"
+      },
+      {
+       "t": 1.0,
+       "a": "laugh"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "name": "bars",
+     "x": 680,
+     "y": 960,
+     "scale": 0.85,
+     "enter": "none",
+     "idle": "none"
+    }
+   ],
+   "texts": [
+    {
+     "text": "INVENTED",
+     "y": 360,
+     "size": 130,
+     "style": "pop",
+     "color": "ink"
+    },
+    {
+     "text": "IN JAIL",
+     "y": 560,
+     "size": 150,
+     "style": "stamp",
+     "t": 0.9
+    }
+   ],
+   "set": "prison"
+  },
+  {
+   "at": "he gets out",
+   "figures": [
+    {
+     "x": 300,
+     "from": -200,
+     "enterDur": 0.5,
+     "scale": 1.2,
+     "acts": [
+      {
+       "t": 0,
+       "a": "run"
+      },
+      {
+       "t": 0.5,
+       "a": "present"
+      }
+     ],
+     "who": "gentleman"
+    }
+   ],
+   "props": [
+    {
+     "name": "sign",
+     "x": 720,
+     "y": 900,
+     "scale": 1.0,
+     "label": "TOOTHBRUSH CO.",
+     "t": 0.9,
+     "enter": "drop"
+    }
+   ],
+   "texts": [
+    {
+     "text": "EST. 1780",
+     "x": 720,
+     "y": 700,
+     "size": 80,
+     "style": "pop",
+     "color": "ink",
+     "t": 1.4
+    }
+   ],
+   "set": "street"
+  },
+  {
+   "at": "still around",
+   "fx": [
+    "punch"
+   ],
+   "sfx": "ding",
+   "figures": [
+    {
+     "x": 540,
+     "scale": 1.4,
+     "head": "hero",
+     "acts": [
+      {
+       "t": 0,
+       "a": "shock"
+      }
+     ],
+     "emotes": [
+      {
+       "t": 0.1,
+       "e": "!!"
+      }
+     ]
+    }
+   ],
+   "texts": [
+    {
+     "text": "STILL",
+     "y": 450,
+     "size": 230
+    },
+    {
+     "text": "AROUND TODAY",
+     "y": 610,
+     "size": 100,
+     "style": "pop",
+     "color": "ink",
+     "t": 0.4
+    }
+   ],
+   "cam": "close"
+  },
+  {
+   "at": "then in 1938",
+   "sfx": "thud",
+   "fx": [
+    "shake"
+   ],
+   "texts": [
+    {
+     "text": "1938",
+     "y": 470,
+     "size": 250,
+     "t": 0.3
+    },
+    {
+     "text": "NYLON",
+     "y": 640,
+     "size": 100,
+     "style": "pop",
+     "color": "ink",
+     "t": 1.2
+    }
+   ],
+   "props": [
+    {
+     "name": "nylonbrush",
+     "x": 300,
+     "y": 950,
+     "scale": 1.3,
+     "t": 1.4,
+     "enter": "pop"
+    },
+    {
+     "name": "pig",
+     "x": 720,
+     "y": 1080,
+     "scale": 1.0,
+     "t": 2.0,
+     "enter": "slideL",
+     "idle": "trot"
+    }
+   ],
+   "set": "lab"
+  },
+  {
+   "at": "you're welcome",
+   "figures": [
+    {
+     "x": 330,
+     "scale": 1.3,
+     "head": "hero",
+     "acts": [
+      {
+       "t": 0,
+       "a": "sassy"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "name": "tooth",
+     "x": 760,
+     "y": 960,
+     "scale": 1.4,
+     "enter": "pop",
+     "idle": "bob"
+    }
+   ],
+   "texts": [
+    {
+     "text": "YOU'RE WELCOME",
+     "y": 500,
+     "size": 110,
+     "style": "pop"
+    }
+   ],
+   "cam": "close"
+  },
+  {
+   "at": "so tonight",
+   "figures": [
+    {
+     "x": 540,
+     "scale": 1.5,
+     "head": "hero",
+     "holding": "toothbrush",
+     "holdingScale": 0.4,
+     "holdingRot": 90,
+     "acts": [
+      {
+       "t": 0,
+       "a": "brush"
+      }
+     ]
+    }
+   ],
+   "set": "kitchen"
+  },
+  {
+   "at": "thank a rioter",
+   "fx": [
+    "punch"
+   ],
+   "figures": [
+    {
+     "x": 330,
+     "scale": 1.2,
+     "head": "hero",
+     "acts": [
+      {
+       "t": 0,
+       "a": "wave"
+      }
+     ]
+    },
+    {
+     "x": 760,
+     "scale": 1.2,
+     "flip": true,
+     "holding": "toothbrush",
+     "holdingScale": 0.45,
+     "acts": [
+      {
+       "t": 0,
+       "a": "celebrate"
+      }
+     ],
+     "who": "gentleman"
+    }
+   ],
+   "texts": [
+    {
+     "text": "THANK A RIOTER",
+     "y": 500,
+     "size": 110,
+     "style": "pop"
+    }
+   ],
+   "set": "street"
+  },
+  {
+   "at": "and one very",
+   "zoom": 0.15,
+   "sfx": "pop",
+   "props": [
+    {
+     "name": "pig",
+     "x": 500,
+     "y": 1000,
+     "scale": 2.0,
+     "enter": "pop",
+     "idle": "shake"
+    }
+   ],
+   "texts": [],
+   "cam": "close"
+  }
+ ]
+}

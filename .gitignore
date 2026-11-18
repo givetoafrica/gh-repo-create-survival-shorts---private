@@ -1,0 +1,5 @@
+node_modules/
+out/
+*.raw.mp4
+.DS_Store
+whisper.cpp/

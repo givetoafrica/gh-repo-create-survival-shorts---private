@@ -1,0 +1,824 @@
+{
+ "id": "fork",
+ "title": "The fork was once a SCANDAL",
+ "theme": "notebook",
+ "voice": "episodes/fork/voice.mp3",
+ "captions": "episodes/fork/captions.json",
+ "duck": {
+  "at": "everyone else",
+  "x": 1000,
+  "y": 1352,
+  "dur": 3.0,
+  "scale": 0.5
+ },
+ "scenes": [
+  {
+   "at": "the fork",
+   "fx": [
+    "shake",
+    "flash",
+    "speedlines"
+   ],
+   "props": [
+    {
+     "name": "fork",
+     "x": 560,
+     "y": 840,
+     "scale": 2.4,
+     "rot": -14,
+     "enter": "slam",
+     "idle": "wobble"
+    }
+   ],
+   "figures": [
+    {
+     "x": 230,
+     "from": -200,
+     "enterDur": 0.35,
+     "scale": 1.1,
+     "head": "hero",
+     "acts": [
+      {
+       "t": 0,
+       "a": "run"
+      },
+      {
+       "t": 0.35,
+       "a": "shock"
+      }
+     ],
+     "emotes": [
+      {
+       "t": 0.4,
+       "e": "!!"
+      }
+     ]
+    }
+   ],
+   "texts": [
+    {
+     "text": "SCANDAL",
+     "y": 420,
+     "size": 190,
+     "t": 1.25,
+     "style": "stamp",
+     "rot": -7
+    }
+   ]
+  },
+  {
+   "at": "like insult",
+   "fx": [
+    "punch"
+   ],
+   "figures": [
+    {
+     "x": 540,
+     "scale": 1.4,
+     "head": "hero",
+     "acts": [
+      {
+       "t": 0,
+       "a": "sassy"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "name": "church",
+     "x": 860,
+     "y": 1060,
+     "scale": 0.9,
+     "enter": "drop",
+     "t": 0.3,
+     "behind": true
+    }
+   ],
+   "texts": [
+    {
+     "text": "INSULT TO GOD",
+     "y": 440,
+     "size": 120,
+     "style": "pop"
+    }
+   ],
+   "set": "church",
+   "cam": "closeLeft"
+  },
+  {
+   "at": "venice",
+   "sfx": "thud",
+   "fx": [
+    "shake"
+   ],
+   "texts": [
+    {
+     "text": "1004",
+     "y": 440,
+     "size": 250,
+     "t": 1.4
+    },
+    {
+     "text": "VENICE",
+     "y": 640,
+     "size": 110,
+     "style": "type",
+     "color": "ink"
+    }
+   ],
+   "props": [
+    {
+     "name": "ship",
+     "x": 760,
+     "y": 1060,
+     "scale": 0.8,
+     "enter": "slideR",
+     "idle": "bob",
+     "behind": true
+    }
+   ],
+   "set": "sea"
+  },
+  {
+   "at": "a byzantine",
+   "figures": [
+    {
+     "x": 360,
+     "from": -200,
+     "enterDur": 0.7,
+     "scale": 1.3,
+     "acts": [
+      {
+       "t": 0,
+       "a": "walk"
+      },
+      {
+       "t": 0.7,
+       "a": "wave"
+      }
+     ],
+     "emotes": [
+      {
+       "t": 1.2,
+       "e": "heart"
+      }
+     ],
+     "who": "princess"
+    },
+    {
+     "x": 760,
+     "scale": 1.3,
+     "flip": true,
+     "acts": [
+      {
+       "t": 0,
+       "a": "idle"
+      },
+      {
+       "t": 1.0,
+       "a": "celebrate"
+      }
+     ],
+     "who": "king"
+    }
+   ],
+   "texts": [
+    {
+     "text": "PRINCESS",
+     "y": 440,
+     "size": 140,
+     "style": "pop",
+     "color": "accent",
+     "t": 0.3
+    }
+   ],
+   "set": "palace"
+  },
+  {
+   "at": "and at the feast",
+   "props": [
+    {
+     "name": "plate",
+     "x": 540,
+     "y": 1110,
+     "scale": 1.3,
+     "enter": "pop",
+     "idle": "none"
+    },
+    {
+     "name": "drumstick",
+     "x": 300,
+     "y": 1030,
+     "scale": 0.6,
+     "enter": "drop",
+     "t": 0.2
+    }
+   ],
+   "figures": [
+    {
+     "x": 820,
+     "scale": 1.2,
+     "flip": true,
+     "acts": [
+      {
+       "t": 0,
+       "a": "sneak"
+      }
+     ],
+     "who": "princess"
+    }
+   ],
+   "texts": [
+    {
+     "text": "THE FEAST",
+     "y": 440,
+     "size": 150,
+     "style": "type",
+     "color": "ink"
+    }
+   ],
+   "set": "palace"
+  },
+  {
+   "at": "tiny golden fork",
+   "fx": [
+    "speedlines",
+    "punch"
+   ],
+   "sfx": "ding",
+   "figures": [
+    {
+     "x": 420,
+     "scale": 1.5,
+     "holding": "fork",
+     "holdingScale": 0.45,
+     "acts": [
+      {
+       "t": 0,
+       "a": "present"
+      },
+      {
+       "t": 0.6,
+       "a": "flex"
+      }
+     ],
+     "emotes": [
+      {
+       "t": 0.3,
+       "e": "sparkle",
+       "dur": 2
+      }
+     ],
+     "who": "princess"
+    }
+   ],
+   "texts": [
+    {
+     "text": "GOLD",
+     "x": 800,
+     "y": 470,
+     "size": 150,
+     "style": "stamp",
+     "color": "gold",
+     "t": 0.9
+    }
+   ],
+   "set": "palace",
+   "cam": "closeLeft"
+  },
+  {
+   "at": "the room",
+   "fx": [
+    "shake"
+   ],
+   "figures": [
+    {
+     "x": 200,
+     "scale": 1.1,
+     "acts": [
+      {
+       "t": 0,
+       "a": "shock"
+      }
+     ],
+     "emotes": [
+      {
+       "t": 0.1,
+       "e": "!"
+      }
+     ],
+     "who": "lady"
+    },
+    {
+     "x": 460,
+     "scale": 1.1,
+     "acts": [
+      {
+       "t": 0.15,
+       "a": "scared"
+      }
+     ],
+     "emotes": [
+      {
+       "t": 0.3,
+       "e": "!!"
+      }
+     ],
+     "who": "king"
+    },
+    {
+     "x": 720,
+     "scale": 1.1,
+     "flip": true,
+     "acts": [
+      {
+       "t": 0.1,
+       "a": "facepalm"
+      }
+     ],
+     "who": "noble"
+    },
+    {
+     "x": 940,
+     "scale": 1.1,
+     "flip": true,
+     "acts": [
+      {
+       "t": 0.05,
+       "a": "shock"
+      }
+     ],
+     "emotes": [
+      {
+       "t": 0.2,
+       "e": "?"
+      }
+     ],
+     "who": "lady"
+    }
+   ],
+   "texts": [
+    {
+     "text": "*GASP*",
+     "y": 440,
+     "size": 170,
+     "style": "slam"
+    }
+   ],
+   "set": "palace"
+  },
+  {
+   "at": "everyone else",
+   "figures": [
+    {
+     "x": 300,
+     "scale": 1.3,
+     "holding": "drumstick",
+     "holdingScale": 0.4,
+     "acts": [
+      {
+       "t": 0,
+       "a": "eat"
+      }
+     ],
+     "who": "lady"
+    },
+    {
+     "x": 760,
+     "scale": 1.3,
+     "flip": true,
+     "holding": "drumstick",
+     "holdingScale": 0.4,
+     "acts": [
+      {
+       "t": 0.2,
+       "a": "eat"
+      }
+     ],
+     "who": "noble"
+    }
+   ],
+   "texts": [
+    {
+     "text": "HANDS ONLY",
+     "y": 440,
+     "size": 140,
+     "style": "pop",
+     "color": "ink"
+    }
+   ],
+   "set": "palace"
+  },
+  {
+   "at": "like civilized",
+   "figures": [
+    {
+     "x": 540,
+     "scale": 1.5,
+     "head": "hero",
+     "acts": [
+      {
+       "t": 0,
+       "a": "shrug"
+      }
+     ]
+    }
+   ],
+   "texts": [
+    {
+     "text": "\"CIVILIZED\"",
+     "y": 440,
+     "size": 140,
+     "style": "pop"
+    }
+   ],
+   "cam": "close"
+  },
+  {
+   "at": "the clergy",
+   "sfx": "thud",
+   "figures": [
+    {
+     "x": 700,
+     "scale": 1.35,
+     "flip": true,
+     "acts": [
+      {
+       "t": 0,
+       "a": "point"
+      }
+     ],
+     "emotes": [
+      {
+       "t": 0.3,
+       "e": "anger",
+       "dur": 2
+      }
+     ],
+     "who": "bishop"
+    },
+    {
+     "x": 300,
+     "scale": 1.2,
+     "holding": "fork",
+     "holdingScale": 0.4,
+     "acts": [
+      {
+       "t": 0,
+       "a": "sassy"
+      }
+     ],
+     "who": "princess"
+    }
+   ],
+   "texts": [
+    {
+     "text": "VANITY!",
+     "y": 440,
+     "size": 180,
+     "style": "stamp",
+     "t": 1.0
+    }
+   ],
+   "set": "church"
+  },
+  {
+   "at": "and when she died",
+   "zoom": 0.08,
+   "props": [
+    {
+     "name": "grave",
+     "x": 540,
+     "y": 1060,
+     "scale": 1.2,
+     "enter": "drop"
+    },
+    {
+     "name": "fork",
+     "x": 700,
+     "y": 1130,
+     "scale": 0.5,
+     "rot": 70,
+     "enter": "pop",
+     "t": 0.6,
+     "idle": "none"
+    }
+   ],
+   "texts": [
+    {
+     "text": "A FEW YEARS LATER",
+     "y": 440,
+     "size": 100,
+     "style": "type",
+     "color": "ink"
+    }
+   ],
+   "set": "church"
+  },
+  {
+   "at": "a future saint",
+   "figures": [
+    {
+     "x": 330,
+     "scale": 1.3,
+     "holding": "scroll",
+     "holdingScale": 0.35,
+     "acts": [
+      {
+       "t": 0,
+       "a": "write"
+      }
+     ],
+     "emotes": [
+      {
+       "t": 0.5,
+       "e": "anger"
+      }
+     ],
+     "who": "bishop"
+    }
+   ],
+   "props": [
+    {
+     "name": "scroll",
+     "x": 760,
+     "y": 900,
+     "scale": 1.1,
+     "label": "PUNISHED!",
+     "enter": "pop",
+     "t": 0.8
+    }
+   ],
+   "set": "study"
+  },
+  {
+   "at": "for the fork",
+   "fx": [
+    "punch"
+   ],
+   "figures": [
+    {
+     "x": 540,
+     "scale": 1.6,
+     "head": "hero",
+     "acts": [
+      {
+       "t": 0,
+       "a": "facepalm"
+      }
+     ]
+    }
+   ],
+   "texts": [
+    {
+     "text": "FOR. THE. FORK.",
+     "y": 440,
+     "size": 130,
+     "style": "slam"
+    }
+   ],
+   "cam": "close"
+  },
+  {
+   "at": "six hundred",
+   "sfx": "thud",
+   "fx": [
+    "shake"
+   ],
+   "texts": [
+    {
+     "text": "1608",
+     "y": 440,
+     "size": 250,
+     "t": 0.1
+    },
+    {
+     "text": "+600 YEARS",
+     "y": 630,
+     "size": 90,
+     "style": "pop",
+     "color": "ink",
+     "t": 0.5
+    }
+   ],
+   "figures": [
+    {
+     "x": 540,
+     "from": 1300,
+     "enterDur": 1.3,
+     "scale": 1.3,
+     "flip": true,
+     "holding": "silverfork",
+     "holdingScale": 0.4,
+     "acts": [
+      {
+       "t": 0,
+       "a": "walk"
+      },
+      {
+       "t": 1.3,
+       "a": "present"
+      }
+     ],
+     "who": "gentleman"
+    }
+   ],
+   "set": "street"
+  },
+  {
+   "at": "his friends",
+   "figures": [
+    {
+     "x": 540,
+     "scale": 1.3,
+     "holding": "silverfork",
+     "holdingScale": 0.4,
+     "acts": [
+      {
+       "t": 0,
+       "a": "sad"
+      }
+     ],
+     "emotes": [
+      {
+       "t": 0.3,
+       "e": "sweat"
+      }
+     ],
+     "who": "gentleman"
+    },
+    {
+     "x": 200,
+     "scale": 1.1,
+     "acts": [
+      {
+       "t": 0,
+       "a": "laugh"
+      }
+     ],
+     "who": "lady"
+    },
+    {
+     "x": 880,
+     "scale": 1.1,
+     "flip": true,
+     "acts": [
+      {
+       "t": 0.1,
+       "a": "point"
+      },
+      {
+       "t": 0.8,
+       "a": "laugh"
+      }
+     ],
+     "who": "peasantWoman"
+    }
+   ],
+   "texts": [
+    {
+     "text": "\"FURCIFER\"",
+     "y": 440,
+     "size": 160,
+     "style": "stamp",
+     "t": 1.1
+    }
+   ],
+   "set": "street"
+  },
+  {
+   "at": "latin for",
+   "fx": [
+    "punch"
+   ],
+   "figures": [
+    {
+     "x": 540,
+     "scale": 1.5,
+     "head": "hero",
+     "acts": [
+      {
+       "t": 0,
+       "a": "talk"
+      },
+      {
+       "t": 1.0,
+       "a": "laugh"
+      }
+     ]
+    }
+   ],
+   "texts": [
+    {
+     "text": "= RASCAL",
+     "y": 440,
+     "size": 180,
+     "style": "slam",
+     "t": 1.05
+    }
+   ],
+   "cam": "close"
+  },
+  {
+   "at": "so next time",
+   "figures": [
+    {
+     "x": 330,
+     "scale": 1.3,
+     "acts": [
+      {
+       "t": 0,
+       "a": "disgust"
+      }
+     ],
+     "emotes": [
+      {
+       "t": 0.6,
+       "e": "?"
+      }
+     ],
+     "who": "peasant"
+    },
+    {
+     "x": 760,
+     "scale": 1.3,
+     "head": "hero",
+     "flip": true,
+     "holding": "chopsticks",
+     "holdingScale": 0.35,
+     "acts": [
+      {
+       "t": 0,
+       "a": "eat"
+      }
+     ]
+    }
+   ],
+   "set": "kitchen"
+  },
+  {
+   "at": "babe",
+   "fx": [
+    "punch"
+   ],
+   "sfx": "pop",
+   "figures": [
+    {
+     "x": 540,
+     "scale": 1.6,
+     "head": "hero",
+     "acts": [
+      {
+       "t": 0,
+       "a": "sassy"
+      }
+     ]
+    }
+   ],
+   "texts": [
+    {
+     "text": "BABE.",
+     "y": 440,
+     "size": 220,
+     "style": "pop"
+    }
+   ],
+   "cam": "close"
+  },
+  {
+   "at": "the fork walked",
+   "zoom": 0.1,
+   "figures": [
+    {
+     "x": 300,
+     "scale": 1.0,
+     "holding": "fork",
+     "holdingScale": 0.4,
+     "acts": [
+      {
+       "t": 0,
+       "a": "walk"
+      }
+     ],
+     "who": "lady"
+    },
+    {
+     "x": 700,
+     "from": 200,
+     "enterDur": 1.6,
+     "scale": 1.2,
+     "head": "hero",
+     "acts": [
+      {
+       "t": 0,
+       "a": "run"
+      }
+     ]
+    }
+   ],
+   "texts": [],
+   "set": "street"
+  }
+ ]
+}

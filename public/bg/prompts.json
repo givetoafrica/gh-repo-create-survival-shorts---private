@@ -1,0 +1,18 @@
+{
+ "style": "Empty 2D cartoon background painting for a vertical animated short, cel-shaded storybook style like a modern animated history explainer: clean bold shapes, thin dark outlines, soft painted texture, warm natural light, gentle depth. Eye-level camera. The floor or ground meets the back wall or horizon at about 70% of the image height, leaving a wide open empty floor area in the center foreground for characters to stand. No people, no animals, no characters, no text, no letters, no logos, no watermark. Vertical 9:16.",
+ "scenes": {
+  "toothbrush/cave": "Inside a prehistoric cave: rough rock walls, a crackling campfire to one side casting orange light, animal-skin rugs and simple stone tools on the floor, cave paintings faintly on the wall.",
+  "toothbrush/palace": "A Ming dynasty Chinese palace hall in 1498: red lacquered columns, golden dragon decorations, paper lanterns, a carved wooden throne platform at the back, polished stone floor.",
+  "toothbrush/prison": "A grim 18th-century London prison cell, 1770: damp stone brick walls, a small high barred window with a beam of light, straw on the stone floor, a wooden bench and a tin cup.",
+  "toothbrush/street": "A Georgian London street in 1770: brick townhouses with sash windows, iron railings, a cobblestone road, a gas-less oil lamp post, overcast sky.",
+  "fork/palace": "A grand 11th-century Venetian banquet hall: marble columns, rich red and gold drapes, a long feast table covered with food along the back wall, mosaic floor, candle chandeliers.",
+  "fork/church": "Inside an 11th-century Byzantine-style Venetian church: golden mosaic walls, arches, a stained glass window, candles, stone floor, solemn light.",
+  "fork/study": "A medieval monastery scriptorium: stone walls, a wooden writing desk with scrolls and quills, bookshelves of old manuscripts, an arched window with daylight, wooden floor.",
+  "fork/street": "A Venice street by a canal in 1608: pastel stone buildings with arched windows, a small bridge, a gondola on the canal at the back, stone pavement in the foreground.",
+  "ketchup/sea": "A 17th-century Southeast Asian coast: turquoise sea, a wooden Chinese junk ship with sails offshore, palm trees, sandy beach in the foreground, bright sky.",
+  "ketchup/ship": "The deck of an 18th-century British sailing ship: wooden planks, a tall mast with rigging and furled sails, barrels and coiled ropes, ocean and sky behind the railing.",
+  "ketchup/lab": "An 1830s American doctor's office and apothecary: wooden shelves of glass bottles and jars, a desk with a mortar and pestle and books, a framed anatomy chart, wooden floor.",
+  "ketchup/street": "An 1830s American frontier town main street: wooden storefronts with painted signboards without readable text, a horse-drawn medicine wagon, dirt road in the foreground, blue sky.",
+  "kitchen": "A cozy modern home kitchen: cabinets, a fridge, a stove, a window with daylight, a few fries and a ketchup bottle on the counter, tiled floor."
+ }
+}
