@@ -13,7 +13,7 @@ export type Pose = {
 };
 
 // Proportions follow the bold "thick-limb" stick style: big head (~1/5 height), long legs.
-export const L = {torso: 140, head: 58, arm: 78, fore: 72, thigh: 88, shin: 86};
+export const L = {torso: 140, head: 68, arm: 78, fore: 72, thigh: 88, shin: 86};
 export const HIP_HEIGHT = L.thigh + L.shin; // hip height above ground when standing
 
 const rad = (d: number) => (d * Math.PI) / 180;

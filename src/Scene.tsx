@@ -16,7 +16,7 @@ import {Emote, FigureSpec, PropSpec, SceneSpec, TextSpec} from './types';
 
 const GROUND = 1180;
 
-const Figure: React.FC<{f: FigureSpec; theme: Theme; t: number; fps: number}> = ({f: f0, theme, t, fps}) => {
+const Figure: React.FC<{f: FigureSpec; theme: Theme; t: number; fps: number; crowd?: number}> = ({f: f0, theme, t, fps, crowd = 1}) => {
 	const f = withCast(f0);
 	const acts = [...f.acts].sort((a, b) => a.t - b.t);
 	let idx = 0;
@@ -28,7 +28,7 @@ const Figure: React.FC<{f: FigureSpec; theme: Theme; t: number; fps: number}> = 
 		const prev = acts[idx - 1];
 		pose = lerpPose(ACTIONS[prev.a](t - prev.t), pose, (t - cur.t) / blend);
 	}
-	let x = 540 + (f.x - 540) * 0.88; // bigger figures: pull toward centre so crowds stay in frame
+	let x = 540 + (f.x - 540) * (crowd <= 1 ? 0.55 : 0.82); // big figures: pull toward centre so they stay in frame
 	const enterDur = f.enterDur ?? 0.45;
 	if (f.from !== undefined) {
 		const k = spring({frame: t * fps, fps, durationInFrames: enterDur * fps, config: {damping: 16}});
@@ -39,7 +39,8 @@ const Figure: React.FC<{f: FigureSpec; theme: Theme; t: number; fps: number}> = 
 		x = f.x + k * k * 900 * (f.flip ? -1 : 1);
 		pose = ACTIONS.run(t);
 	}
-	const s = (f.scale ?? 1) * 1.4; // figures fill ~45% of frame height (reference spec)
+	// reference fills 65-90% of the frame with one character: solo figures go big, crowds shrink to fit
+	const s = (f.scale ?? 1) * (crowd <= 1 ? 1.75 : crowd === 2 ? 1.45 : 1.3);
 	const expr: Expr = (cur as any).e ?? ACT_EXPR[cur.a] ?? 'neutral';
 	const blinkT = (t * 1000 + (f.x * 7) % 1700) % 2900;
 	const blink = blinkT < 110;
@@ -161,7 +162,7 @@ const BigText: React.FC<{tx: TextSpec; theme: Theme; t: number; fps: number}> = 
 	const color = tx.color === 'ink' ? theme.ink : tx.color === 'gold' ? theme.gold : !tx.color || tx.color === 'accent' ? theme.accent : tx.color;
 	const size = tx.size ?? 190;
 	return (
-		<g transform={`translate(${tx.x ?? 540},${Math.min((tx.y ?? 520) * 0.5 + 20, 300)}) rotate(${rot}) scale(${sc})`} opacity={op}>
+		<g transform={`translate(${tx.x ?? 540},${Math.min((tx.y ?? 520) * 0.3 + 10, 150)}) rotate(${rot}) scale(${sc})`} opacity={op}>
 			{style === 'stamp' ? (
 				<rect x={-(shown.length * size * 0.33) - 30} y={-size * 0.85} width={shown.length * size * 0.66 + 60} height={size * 1.08} rx={18} fill="none" stroke={color} strokeWidth={12} />
 			) : null}
@@ -202,7 +203,7 @@ export const Scene: React.FC<{spec: SceneSpec; theme: Theme; dur: number; painte
 	const flash = fx.includes('flash') ? interpolate(frame, [0, 5], [0.85, 0], {extrapolateRight: 'clamp'}) : 0;
 	const props = spec.props ?? [];
 	const cam = spec.cam ?? 'normal';
-	const camZ = cam === 'normal' ? 1 : 1.38;
+	const camZ = cam === 'normal' ? 1 : 1.1; // figures are already big: close-ups only nudge in
 	const camX = cam === 'closeLeft' ? 330 : cam === 'closeRight' ? 750 : 540;
 	const camY = cam === 'normal' ? 900 : 780;
 	return (
@@ -226,7 +227,7 @@ export const Scene: React.FC<{spec: SceneSpec; theme: Theme; dur: number; painte
 				{fx.includes('speedlines') ? <SpeedLines theme={theme} frame={frame} /> : null}
 				{fx.includes('spotlight') ? <ellipse cx={540} cy={1000} rx={360} ry={420} fill={theme.glow ? '#2A2D3A' : '#FFF6D6'} opacity={0.8} /> : null}
 				{props.filter((p) => p.behind).map((p, i) => <PropEl key={`b${i}`} p={p} theme={theme} t={t} fps={fps} />)}
-				{(spec.figures ?? []).map((f, i) => <Figure key={i} f={f} theme={theme} t={t} fps={fps} />)}
+				{(spec.figures ?? []).map((f, i) => <Figure key={i} f={f} theme={theme} t={t} fps={fps} crowd={(spec.figures ?? []).length} />)}
 				{props.filter((p) => !p.behind).map((p, i) => <PropEl key={`f${i}`} p={p} theme={theme} t={t} fps={fps} />)}
 				{(spec.texts ?? []).map((tx, i) => <BigText key={i} tx={tx} theme={theme} t={t} fps={fps} />)}
 			</g>
