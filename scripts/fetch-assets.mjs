@@ -13,7 +13,11 @@ for (const [rel, url] of Object.entries(src)) {
 	const res = await fetch(url);
 	if (!res.ok) throw new Error(`${url}: ${res.status}`);
 	fs.writeFileSync(tmp, Buffer.from(await res.arrayBuffer()));
-	execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', tmp, '-vf', 'scale=1080:1920:flags=lanczos', '-q:v', '3', out]);
-	fs.unlinkSync(tmp);
+	try {
+		execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', tmp, '-vf', 'scale=1080:1920:flags=lanczos', '-q:v', '3', out]);
+		fs.unlinkSync(tmp);
+	} catch {
+		fs.renameSync(tmp, out); // no ffmpeg: keep the original PNG bytes (the renderer scales it anyway)
+	}
 	console.log('saved', out);
 }
