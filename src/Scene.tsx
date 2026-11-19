@@ -255,9 +255,9 @@ const PhotoShot: React.FC<{p: PhotoSpec; t: number; dur: number; punch: number; 
 	const era = p.era ?? (p.heads.some((h, i) => h.talks ?? i === 0) ? 'now' : 'sepia');
 	const past = era !== 'now';
 	const f = Math.floor(t * 24); // old film runs at 24 fps: grain/scratches jump on that beat
-	const flicker = past ? 0.9 + random(`fl${f}`) * 0.1 : 1;
+	const flicker = past ? 0.95 + random(`fl${f}`) * 0.05 : 1;
 	const jitterY = past ? (random(`jy${f}`) - 0.5) * 4 : 0;
-	const intro = past ? Math.max(0, 1 - t / 0.35) : 0; // quick projector flash entering the flashback
+	const intro = past ? Math.max(0, 1 - t / 0.2) : 0; // quick projector flash entering the flashback
 	const matrix = era === 'bw'
 		? '0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0'
 		: '0.393 0.769 0.189 0 0  0.349 0.686 0.168 0 0  0.272 0.534 0.131 0 0  0 0 0 1 0';
@@ -304,7 +304,7 @@ const PhotoShot: React.FC<{p: PhotoSpec; t: number; dur: number; punch: number; 
 					{/* film-frame bars top and bottom */}
 					<rect width={1080} height={46} fill="#0b0805" />
 					<rect y={1874} width={1080} height={46} fill="#0b0805" />
-					{intro > 0 ? <rect width={1080} height={1920} fill="#fff6e0" opacity={intro * 0.9} /> : null}
+					{intro > 0 ? <rect width={1080} height={1920} fill="#fff6e0" opacity={intro * 0.4} /> : null}
 				</g>
 			) : null}
 		</g>
