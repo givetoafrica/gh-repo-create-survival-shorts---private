@@ -6,6 +6,7 @@ import {Vignette} from './sets/Sets';
 import {THEMES, Theme} from './themes';
 import {buildPages} from './timing';
 import {Caption, Episode} from './types';
+import {MouthContext, visemeAt} from './rig/lipsync';
 
 export type ShortProps = {
 	episodeId: string;
@@ -106,6 +107,7 @@ export const Short: React.FC<ShortProps> = ({episode, captions, starts, duckStar
 	const d = episode.duck;
 	const duckK = duckStart !== undefined && t >= duckStart && t < duckStart + d.dur ? spring({frame: (t - duckStart) * fps, fps, config: {damping: 10}}) : 0;
 	return (
+		<MouthContext.Provider value={visemeAt(captions, (frame / fps) * 1000)}>
 		<AbsoluteFill style={{backgroundColor: theme.bg}}>
 			<svg width={1080} height={1920} viewBox="0 0 1080 1920" style={{position: 'absolute'}}>
 				<defs>
@@ -151,5 +153,6 @@ export const Short: React.FC<ShortProps> = ({episode, captions, starts, duckStar
 			)}
 			<AbsoluteFill style={{opacity: interpolate(frame, [0, 3], [1, 0], {extrapolateRight: 'clamp'}), backgroundColor: theme.bg}} />
 		</AbsoluteFill>
+		</MouthContext.Provider>
 	);
 };

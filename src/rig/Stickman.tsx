@@ -1,4 +1,5 @@
 import React from 'react';
+import {MouthContext, Viseme} from './lipsync';
 import {Prop} from '../props/Props';
 import {Theme} from '../themes';
 
@@ -45,9 +46,11 @@ export const Stickman: React.FC<{
 	holdingScale?: number;
 	holdingRot?: number;
 	expr?: Expr;
+	talking?: boolean;
 	blink?: boolean;
 	look?: Look;
-}> = ({pose, theme, color, headColor, hat = 'none', holding, holdingScale = 0.45, holdingRot = 0, expr = 'neutral', blink = false, look = {}}) => {
+}> = ({pose, theme, color, headColor, hat = 'none', holding, holdingScale = 0.45, holdingRot = 0, expr = 'neutral', blink = false, look = {}, talking = false}) => {
+	const vis = React.useContext(MouthContext);
 	const ink = color ?? theme.ink;
 	const hip = {x: pose.dx, y: -HIP_HEIGHT + pose.dy};
 	const t = dir(180 - pose.torso, L.torso); // upward
@@ -170,7 +173,7 @@ export const Stickman: React.FC<{
 				{hairBack}
 				<circle r={L.head} fill={headColor ?? theme.skin} stroke={theme.outlineColor} strokeWidth={O} />
 				{beard}
-				<Face expr={expr} ink={theme.outlineColor} look={facing * 4} blink={blink} lashes={look.lashes} />
+				<Face expr={expr} ink={theme.outlineColor} look={facing * 4} blink={blink} lashes={look.lashes} vis={talking ? vis : undefined} />
 				{hat === 'none' || hat === 'cap' || hat === 'bandana' || hat === 'laurel' || hat === 'tiara' || hat === 'veil' ? hairTop : null}
 			</g>
 			<HatShape hat={hat} x={head.x} y={head.y} rot={ha} theme={theme} />
@@ -181,7 +184,7 @@ export const Stickman: React.FC<{
 export type Expr = 'neutral' | 'shock' | 'smug' | 'grin' | 'frown' | 'angry' | 'disgust' | 'sleepy';
 
 // Cartoon face: dot eyes + one-line brows + small mouth. Expression swaps carry the comedy.
-const Face: React.FC<{expr: Expr; ink: string; look: number; blink: boolean; lashes?: boolean}> = ({expr, ink, look, blink, lashes}) => {
+const Face: React.FC<{expr: Expr; ink: string; look: number; blink: boolean; lashes?: boolean; vis?: Viseme}> = ({expr, ink, look, blink, lashes, vis}) => {
 	const ex = [6 + look, 24 + look];
 	const ey = -6;
 	const line = {stroke: ink, strokeWidth: 5, strokeLinecap: 'round' as const, fill: 'none'};
@@ -221,7 +224,14 @@ const Face: React.FC<{expr: Expr; ink: string; look: number; blink: boolean; las
 			{eyes}
 			{lashes && !blink ? ex.map((x) => <path key={'l' + x} d={`M${x + 4},${ey - 6} L${x + 11},${ey - 13} M${x - 1},${ey - 7} L${x + 2},${ey - 15}`} {...line} strokeWidth={4} />) : null}
 			{brows[expr] ? <path d={brows[expr]} {...line} /> : null}
-			{mouth[expr]}
+			{vis && vis.open > 0.12 ? (
+				<g>
+					<ellipse cx={mx} cy={19} rx={vis.round ? 9 : vis.wide ? 16 : 12} ry={4 + vis.open * (vis.round ? 14 : 12)} fill={ink} />
+					{vis.open > 0.55 && !vis.round ? <ellipse cx={mx} cy={22 + vis.open * 6} rx={7} ry={3.5} fill="#E5484D" /> : null}
+				</g>
+			) : (
+				mouth[expr]
+			)}
 		</g>
 	);
 };

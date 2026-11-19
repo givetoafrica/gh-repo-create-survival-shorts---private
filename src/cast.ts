@@ -35,3 +35,14 @@ export const withCast = (f: FigureSpec): FigureSpec => {
 	if (!base) return f;
 	return {...base, ...f, look: {...(base.look ?? {}), ...(f.look ?? {})}} as FigureSpec;
 };
+
+// Cartoon heads for "photo" scenes (cartoon head on a painted realistic body). One entry per character.
+import type {HeadStyle} from './rig/CartoonHead';
+export const CAST_HEADS: Record<string, HeadStyle> = {
+	host: {skin: '#F6D2B0', hair: '#C0392B', hairStyle: 'bun', lashes: true, brow: 1},
+	caveman: {skin: '#E8B48A', hair: '#3a2614', hairStyle: 'wild', beard: 'full'},
+	cavewoman: {skin: '#E8B48A', hair: '#5a3a1a', hairStyle: 'long', lashes: true},
+	gentleman: {skin: '#F3D0B0', hair: '#3a2614', hairStyle: 'short', beard: 'moustache'},
+	jailer: {skin: '#E9BE98', hair: '#2b2b2b', hairStyle: 'short', beard: 'stubble', brow: -1},
+	galileoLike: {skin: '#F1C9A5', hair: '#9a9a9a', hairStyle: 'wild', beard: 'full'},
+};

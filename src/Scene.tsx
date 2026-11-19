@@ -9,14 +9,15 @@ const ACT_EXPR: Record<string, Expr> = {
 	chew: 'neutral', eat: 'grin', craft: 'neutral', sit: 'sleepy', sneak: 'smug', write: 'angry', shrug: 'smug', brush: 'neutral', drink: 'grin',
 };
 import {Prop} from './props/Props';
-import {withCast} from './cast';
+import {CartoonHead} from './rig/CartoonHead';
+import {withCast, CAST_HEADS} from './cast';
 import {Theme} from './themes';
 import {LightPool, SetBackdrop, tone} from './sets/Sets';
-import {Emote, FigureSpec, PropSpec, SceneSpec, TextSpec} from './types';
+import {Emote, FigureSpec, PropSpec, SceneSpec, TextSpec, PhotoSpec} from './types';
 
 const GROUND = 1180;
 
-const Figure: React.FC<{f: FigureSpec; theme: Theme; t: number; fps: number; crowd?: number}> = ({f: f0, theme, t, fps, crowd = 1}) => {
+const Figure: React.FC<{f: FigureSpec; theme: Theme; t: number; fps: number; crowd?: number; order?: number}> = ({f: f0, theme, t, fps, crowd = 1, order = 0}) => {
 	const f = withCast(f0);
 	const acts = [...f.acts].sort((a, b) => a.t - b.t);
 	let idx = 0;
@@ -51,7 +52,7 @@ const Figure: React.FC<{f: FigureSpec; theme: Theme; t: number; fps: number; cro
 	return (
 		<g transform={`translate(${x},${y})`}>
 			<g transform={`scale(${s * (f.flip ? -1 : 1)},${s})`}>
-				<Stickman pose={pose} theme={theme} color={bodyColor} headColor={headColor} hat={f.hat} holding={f.holding} holdingScale={f.holdingScale} holdingRot={f.holdingRot} expr={expr} blink={blink} look={f.look} />
+				<Stickman pose={pose} theme={theme} color={bodyColor} headColor={headColor} hat={f.hat} holding={f.holding} holdingScale={f.holdingScale} holdingRot={f.holdingRot} expr={expr} blink={blink} look={f.look} talking={f.talks ?? order === 0} />
 			</g>
 			{(f.emotes ?? []).map((e, i) => {
 				const lt = t - e.t;
@@ -208,8 +209,9 @@ export const Scene: React.FC<{spec: SceneSpec; theme: Theme; dur: number; painte
 	const camY = cam === 'normal' ? 900 : 780;
 	return (
 		<>
+			{spec.photo ? <PhotoShot p={spec.photo} t={t} dur={dur} punch={punch} sx={sx} sy={sy} /> : null}
 			<g transform={`translate(${540 + sx},${1100 + sy}) scale(${zoom * punch * camZ}) translate(${-camX},${-camY})`}>
-				{spec.set && spec.set !== 'none' && painted?.[spec.set] ? (
+				{spec.photo ? null : spec.set && spec.set !== 'none' && painted?.[spec.set] ? (
 					<>
 						{/* AI-painted backdrop, 1080x1920 with the floor line ~72% down; drawn 20% oversize so push-ins never show an edge */}
 						<image href={staticFile(painted![spec.set!])} x={-108} y={-332} width={1296} height={2304} preserveAspectRatio="xMidYMid slice" />
@@ -223,11 +225,11 @@ export const Scene: React.FC<{spec: SceneSpec; theme: Theme; dur: number; painte
 						<path d={`M-300,${GROUND} L1400,${GROUND}`} stroke={theme.ground} strokeWidth={7} />
 					</>
 				) : null}
-				<LightPool theme={theme} />
+				{spec.photo ? null : <LightPool theme={theme} />}
 				{fx.includes('speedlines') ? <SpeedLines theme={theme} frame={frame} /> : null}
 				{fx.includes('spotlight') ? <ellipse cx={540} cy={1000} rx={360} ry={420} fill={theme.glow ? '#2A2D3A' : '#FFF6D6'} opacity={0.8} /> : null}
 				{props.filter((p) => p.behind).map((p, i) => <PropEl key={`b${i}`} p={p} theme={theme} t={t} fps={fps} />)}
-				{(spec.figures ?? []).map((f, i) => <Figure key={i} f={f} theme={theme} t={t} fps={fps} crowd={(spec.figures ?? []).length} />)}
+				{(spec.photo ? [] : spec.figures ?? []).map((f, i) => <Figure key={i} f={f} theme={theme} t={t} fps={fps} crowd={(spec.figures ?? []).length} order={i} />)}
 				{props.filter((p) => !p.behind).map((p, i) => <PropEl key={`f${i}`} p={p} theme={theme} t={t} fps={fps} />)}
 				{(spec.texts ?? []).map((tx, i) => <BigText key={i} tx={tx} theme={theme} t={t} fps={fps} />)}
 			</g>
@@ -241,5 +243,22 @@ export const Scene: React.FC<{spec: SceneSpec; theme: Theme; dur: number; painte
 			) : null}
 			{flash > 0 ? <rect x={0} y={0} width={1080} height={1920} fill="#FFFFFF" opacity={flash} /> : null}
 		</>
+	);
+};
+
+const PhotoShot: React.FC<{p: PhotoSpec; t: number; dur: number; punch: number; sx: number; sy: number}> = ({p, t, dur, punch, sx, sy}) => {
+	const z = (1 + (p.zoom ?? 0.06) * Math.min(1, t / Math.max(dur, 0.1))) * punch;
+	const fxp = p.focusX ?? 540;
+	const fyp = p.focusY ?? 800;
+	return (
+		<g transform={`translate(${fxp + sx},${fyp + sy}) scale(${z}) translate(${-fxp},${-fyp})`}>
+			<image href={staticFile(p.src)} x={0} y={0} width={1080} height={1920} preserveAspectRatio="xMidYMid slice" />
+			{p.heads.map((h, i) => {
+				const st = h.who ? CAST_HEADS[h.who] : undefined;
+				const blinkT = (t * 1000 + i * 1300) % 3100;
+				const bob = Math.sin(t * 2.2 + i) * 3;
+				return <CartoonHead key={i} x={h.x} y={h.y + bob} r={h.r} rot={(h.rot ?? 0) + Math.sin(t * 1.7 + i) * 2} style={st} talking={h.talks ?? i === 0} blink={blinkT < 120} look={h.look ?? 0} />;
+			})}
+		</g>
 	);
 };

@@ -23,6 +23,7 @@ export type FigureSpec = {
 	holdingRot?: number;
 	emotes?: {t: number; e: Emote; dur?: number}[];
 	exitAt?: number; // seconds: run off to the right
+	talks?: boolean; // lip-syncs the narration (default: first figure in the scene)
 };
 
 export type Emote = '!' | '?' | '!!' | 'heart' | 'sweat' | 'anger' | 'dots' | 'sparkle' | 'stars' | 'zzz';
@@ -54,7 +55,16 @@ export type TextSpec = {
 	sub?: string; // small line under
 };
 
+export type PhotoSpec = {
+	src: string; // painted realistic shot in public/ (1080x1920)
+	heads: {x: number; y: number; r: number; rot?: number; who?: string; talks?: boolean; look?: number}[]; // face circles in screen px
+	zoom?: number; // slow push-in, default 0.06
+	focusX?: number; // push-in centre
+	focusY?: number;
+};
+
 export type SceneSpec = {
+	photo?: PhotoSpec;
 	at: string; // phrase in the narration that starts this scene
 	lead?: number; // seconds before the word (default 0.12)
 	figures?: FigureSpec[];

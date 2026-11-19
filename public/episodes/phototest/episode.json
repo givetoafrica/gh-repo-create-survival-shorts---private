@@ -1,0 +1,113 @@
+{
+ "id": "phototest",
+ "title": "Cartoon head on painted body - 10 s test of toothbrush",
+ "theme": "classic",
+ "voice": "episodes/toothbrush/voice.mp3",
+ "captions": "episodes/toothbrush/captions.json",
+ "duck": {
+  "at": "bored",
+  "x": 1000,
+  "y": 1352,
+  "dur": 3.2,
+  "scale": 0.5
+ },
+ "_note": "heads[].x/y/r = circle over the painted face in 1080x1920 px. Adjust per image so the cartoon head fully covers the real face and hair.",
+ "scenes": [
+  {
+   "at": "stop",
+   "fx": [
+    "shake",
+    "flash"
+   ],
+   "photo": {
+    "src": "bg/photo/toothbrush/host-stop.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 430,
+      "r": 115,
+      "who": "host",
+      "talks": true
+     }
+    ]
+   },
+   "texts": [
+    {
+     "text": "STOP!",
+     "y": 560,
+     "size": 260,
+     "t": 0.12
+    }
+   ]
+  },
+  {
+   "at": "your toothbrush",
+   "sfx": "thud",
+   "photo": {
+    "src": "bg/photo/toothbrush/host-mugshot.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 430,
+      "r": 115,
+      "who": "host",
+      "talks": true
+     }
+    ]
+   }
+  },
+  {
+   "at": "okay rewind",
+   "fx": [
+    "rewind"
+   ],
+   "photo": {
+    "src": "bg/photo/toothbrush/host-stop.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 430,
+      "r": 115,
+      "who": "host",
+      "talks": true
+     }
+    ],
+    "zoom": -0.04
+   },
+   "texts": [
+    {
+     "text": "REWIND",
+     "y": 520,
+     "size": 170,
+     "style": "pop",
+     "color": "ink"
+    }
+   ]
+  },
+  {
+   "at": "five thousand",
+   "photo": {
+    "src": "bg/photo/toothbrush/caveman.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 430,
+      "r": 115,
+      "who": "caveman",
+      "talks": false
+     }
+    ]
+   },
+   "texts": [
+    {
+     "text": "5,000",
+     "y": 470,
+     "size": 230,
+     "sub": "YEARS AGO",
+     "style": "stamp",
+     "rot": -6
+    }
+   ]
+  }
+ ]
+}
