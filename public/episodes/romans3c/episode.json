@@ -1,0 +1,256 @@
+{
+  "id": "romans3c",
+  "title": "10 Weird Things You Didn't Know About Ancient Roman Life",
+  "theme": "classic",
+  "format": "explainer",
+  "voice": "episodes/romans3c/voice.mp3",
+  "captions": "episodes/romans3c/captions.json",
+  "duck": {
+    "at": "wooden sandals",
+    "x": 930,
+    "y": 1700,
+    "dur": 2.5,
+    "scale": 0.45
+  },
+  "_note": "New standard style: AI-redrawn faces baked into each picture (no code heads), narrator Zane.",
+  "scenes": [
+    {
+      "at": "ancient romans",
+      "props": [],
+      "photo": {
+        "src": "bg/photo/romans3c/hook.jpg",
+        "heads": []
+      },
+      "sfx": "whoosh",
+      "fx": [
+        "flash"
+      ]
+    },
+    {
+      "at": "laundry service",
+      "props": [],
+      "photo": {
+        "src": "bg/photo/romans3c/close-shocked.jpg",
+        "heads": []
+      }
+    },
+    {
+      "at": "some public toilets",
+      "props": [],
+      "photo": {
+        "src": "bg/photo/romans3c/toilet.jpg",
+        "heads": []
+      },
+      "num": 10,
+      "sfx": "pop"
+    },
+    {
+      "at": "imagine making",
+      "props": [],
+      "photo": {
+        "src": "bg/photo/romans3c/close-scared.jpg",
+        "heads": []
+      }
+    },
+    {
+      "at": "bathers used oil",
+      "props": [],
+      "photo": {
+        "src": "bg/photo/romans3c/scraper.jpg",
+        "heads": []
+      },
+      "num": 9,
+      "sfx": "pop"
+    },
+    {
+      "at": "scraper to remove",
+      "props": [],
+      "photo": {
+        "src": "bg/photo/romans3c/prop-strigil.jpg",
+        "heads": []
+      }
+    },
+    {
+      "at": "congratulations",
+      "props": [],
+      "photo": {
+        "src": "bg/photo/romans3c/scraper.jpg",
+        "heads": []
+      }
+    },
+    {
+      "at": "hair plucking",
+      "props": [],
+      "photo": {
+        "src": "bg/photo/romans3c/pluck.jpg",
+        "heads": []
+      },
+      "num": 8,
+      "sfx": "pop"
+    },
+    {
+      "at": "attack your armpits",
+      "props": [],
+      "photo": {
+        "src": "bg/photo/romans3c/close-pain.jpg",
+        "heads": []
+      }
+    },
+    {
+      "at": "bathhouses even",
+      "props": [],
+      "photo": {
+        "src": "bg/photo/romans3c/poetry.jpg",
+        "heads": []
+      },
+      "num": 7,
+      "sfx": "pop"
+    },
+    {
+      "at": "wet trapped",
+      "props": [],
+      "photo": {
+        "src": "bg/photo/romans3c/prop-scroll.jpg",
+        "heads": []
+      }
+    },
+    {
+      "at": "somebodys performing",
+      "props": [],
+      "photo": {
+        "src": "bg/photo/romans3c/poetry.jpg",
+        "heads": []
+      }
+    },
+    {
+      "at": "some hot room",
+      "props": [],
+      "photo": {
+        "src": "bg/photo/romans3c/sandals.jpg",
+        "heads": []
+      },
+      "num": 6,
+      "sfx": "pop"
+    },
+    {
+      "at": "the building was",
+      "props": [],
+      "photo": {
+        "src": "bg/photo/romans3c/prop-sandals.jpg",
+        "heads": []
+      }
+    },
+    {
+      "at": "pompeii had",
+      "props": [],
+      "photo": {
+        "src": "bg/photo/romans3c/snackbar.jpg",
+        "heads": []
+      },
+      "num": 5,
+      "sfx": "pop"
+    },
+    {
+      "at": "our ice cream",
+      "props": [],
+      "photo": {
+        "src": "bg/photo/romans3c/prop-icecream.jpg",
+        "heads": []
+      }
+    },
+    {
+      "at": "people wrote graffiti",
+      "props": [],
+      "photo": {
+        "src": "bg/photo/romans3c/graffiti.jpg",
+        "heads": []
+      },
+      "num": 4,
+      "sfx": "pop"
+    },
+    {
+      "at": "comment section",
+      "props": [],
+      "photo": {
+        "src": "bg/photo/romans3c/close-disgusted.jpg",
+        "heads": []
+      }
+    },
+    {
+      "at": "at bath",
+      "props": [],
+      "photo": {
+        "src": "bg/photo/romans3c/curse.jpg",
+        "heads": []
+      },
+      "num": 3,
+      "sfx": "pop"
+    },
+    {
+      "at": "revenge",
+      "props": [],
+      "photo": {
+        "src": "bg/photo/romans3c/prop-curse.jpg",
+        "heads": []
+      }
+    },
+    {
+      "at": "ancient customer",
+      "props": [],
+      "photo": {
+        "src": "bg/photo/romans3c/curse.jpg",
+        "heads": []
+      }
+    },
+    {
+      "at": "fullers used",
+      "props": [],
+      "photo": {
+        "src": "bg/photo/romans3c/fullers.jpg",
+        "heads": []
+      },
+      "num": 2,
+      "sfx": "pop"
+    },
+    {
+      "at": "your questions",
+      "props": [],
+      "photo": {
+        "src": "bg/photo/romans3c/close-disgusted.jpg",
+        "heads": []
+      }
+    },
+    {
+      "at": "and vespasian",
+      "props": [],
+      "photo": {
+        "src": "bg/photo/romans3c/taxman.jpg",
+        "heads": []
+      },
+      "num": 1,
+      "sfx": "pop"
+    },
+    {
+      "at": "even your bladder",
+      "props": [],
+      "photo": {
+        "src": "bg/photo/romans3c/prop-purse.jpg",
+        "heads": []
+      }
+    },
+    {
+      "at": "keep going",
+      "props": [],
+      "photo": {
+        "src": "bg/photo/romans3c/final.jpg",
+        "heads": []
+      },
+      "sfx": "thud"
+    }
+  ],
+  "tts": {
+    "voiceId": "GSvNDZsT0i8NKI79rH7K",
+    "name": "Zane - Dynamic and Expressive",
+    "model": "eleven_v4"
+  }
+}
