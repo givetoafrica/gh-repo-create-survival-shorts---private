@@ -52,3 +52,12 @@ CAST_HEADS.chemist = {skin: '#F1CDA8', hair: '#8f8f8f', hairStyle: 'short', bear
 CAST_HEADS.teddy = {skin: '#F1C6A0', hair: '#6b4423', hairStyle: 'short', beard: 'moustache', glasses: 'pince-nez', brow: 1};
 CAST_HEADS.schrank = {skin: '#E8C2A0', hair: '#2b2b2b', hairStyle: 'short', beard: 'stubble', brow: -1};
 CAST_HEADS.doctor1912 = {skin: '#F1CDA8', hair: '#bdbdbd', hairStyle: 'short', beard: 'full', glasses: 'round'};
+// Ancient Rome (10 weird things about the Romans)
+CAST_HEADS.romanMan = {skin: '#E9BC93', hair: '#2b2b2b', hairStyle: 'short'};
+CAST_HEADS.romanMan2 = {skin: '#D9A578', hair: '#3a2614', hairStyle: 'short', beard: 'stubble'};
+CAST_HEADS.romanWoman = {skin: '#F0C8A2', hair: '#3a2614', hairStyle: 'bun', lashes: true};
+CAST_HEADS.romanCook = {skin: '#E2B088', hair: '#5a3a1a', hairStyle: 'short', beard: 'full'};
+CAST_HEADS.bather = {skin: '#DDA77C', hair: '#2b2b2b', hairStyle: 'short', beard: 'stubble', brow: 1};
+CAST_HEADS.fuller = {skin: '#D79F72', hair: '#4a3020', hairStyle: 'wild', brow: -1};
+CAST_HEADS.vespasian = {skin: '#EDC09A', hair: '#8f8f8f', hairStyle: 'none', brow: 1};
+CAST_HEADS.poet = {skin: '#EFC6A0', hair: '#3a2614', hairStyle: 'wild', beard: 'full'};

@@ -1,0 +1,609 @@
+{
+ "id": "romans",
+ "title": "10 Weird Things About Ancient Roman Life",
+ "theme": "classic",
+ "format": "explainer",
+ "voice": "episodes/romans/voice.mp3",
+ "captions": "episodes/romans/captions.json",
+ "duck": {
+  "at": "sponge",
+  "x": 930,
+  "y": 1700,
+  "dur": 2.5,
+  "scale": 0.45
+ },
+ "_note": "Explainer format: no lip-sync, full colour, one big word mid-screen, countdown number. Fit heads[].x/y/r over each painted face after painting.",
+ "scenes": [
+  {
+   "at": "ten weird things",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans/intro.jpg",
+    "prompt": "Photorealistic, vivid full colour, cinematic daylight, ancient Rome. A Roman man in a white toga standing in the sunny Forum with marble columns behind him, staring straight at the camera with wide eyes, framed from the waist up.",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "romanMan"
+     }
+    ]
+   },
+   "texts": [
+    {
+     "text": "ANCIENT ROME",
+     "y": 1500,
+     "size": 140,
+     "style": "stamp",
+     "color": "gold",
+     "t": 0.6
+    }
+   ],
+   "sfx": "whoosh",
+   "fx": [
+    "flash"
+   ]
+  },
+  {
+   "at": "ten they ate",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans/couches.jpg",
+    "prompt": "Photorealistic, vivid full colour, cinematic daylight, ancient Rome. A lavish Roman dinner party: three wealthy Romans in togas lying sideways on cushioned couches around a low table piled with food, propped on their elbows, relaxed, wide shot.",
+    "heads": [
+     {
+      "x": 300,
+      "y": 700,
+      "r": 90,
+      "who": "romanMan"
+     },
+     {
+      "x": 560,
+      "y": 640,
+      "r": 90,
+      "who": "romanWoman"
+     },
+     {
+      "x": 820,
+      "y": 700,
+      "r": 90,
+      "who": "romanMan2"
+     }
+    ]
+   },
+   "num": 10,
+   "sfx": "pop"
+  },
+  {
+   "at": "forks nope",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans/fingers.jpg",
+    "prompt": "Photorealistic, vivid full colour, cinematic daylight, ancient Rome. Close shot of a Roman man in a toga, lying on a couch, happily stuffing a roast chicken leg into his mouth with greasy fingers, sauce dripping down his hand.",
+    "heads": [
+     {
+      "x": 540,
+      "y": 500,
+      "r": 130,
+      "who": "romanMan2"
+     }
+    ]
+   },
+   "texts": [
+    {
+     "text": "NO FORKS",
+     "y": 1500,
+     "size": 150,
+     "style": "stamp",
+     "color": "gold",
+     "t": 0.3
+    }
+   ],
+   "sfx": "thud"
+  },
+  {
+   "at": "nine",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans/thermopolium.jpg",
+    "prompt": "Photorealistic, vivid full colour, cinematic daylight, ancient Rome. A busy Pompeii street food counter with big clay pots sunk into a stone counter, a bearded cook in a tunic ladling hot stew into a bowl for a hungry customer leaning on the counter, painted walls.",
+    "heads": [
+     {
+      "x": 360,
+      "y": 520,
+      "r": 105,
+      "who": "romanCook"
+     },
+     {
+      "x": 760,
+      "y": 540,
+      "r": 100,
+      "who": "romanMan"
+     }
+    ]
+   },
+   "num": 9,
+   "texts": [
+    {
+     "text": "FAST FOOD",
+     "y": 1500,
+     "size": 150,
+     "style": "stamp",
+     "color": "gold",
+     "t": 0.3
+    }
+   ],
+   "sfx": "pop"
+  },
+  {
+   "at": "eight",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans/garum.jpg",
+    "prompt": "Photorealistic, vivid full colour, cinematic daylight, ancient Rome. A grinning Roman cook in a tunic pouring brown fish sauce from a tall clay amphora all over a dessert cake, a bowl of grapes and a plate of bread on a kitchen table, framed from the waist up.",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "romanCook"
+     }
+    ]
+   },
+   "num": 8,
+   "texts": [
+    {
+     "text": "GARUM",
+     "y": 1500,
+     "size": 150,
+     "style": "stamp",
+     "color": "gold",
+     "t": 0.3
+    }
+   ],
+   "sfx": "pop"
+  },
+  {
+   "at": "seven",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans/dormice.jpg",
+    "prompt": "Photorealistic, vivid full colour, cinematic daylight, ancient Rome. An elegant Roman hostess in a silk dress proudly presenting a silver platter of small roasted dormice glazed with honey to two dinner guests who lean back in horror.",
+    "heads": [
+     {
+      "x": 540,
+      "y": 430,
+      "r": 115,
+      "who": "romanWoman"
+     },
+     {
+      "x": 220,
+      "y": 620,
+      "r": 85,
+      "who": "romanMan"
+     },
+     {
+      "x": 860,
+      "y": 620,
+      "r": 85,
+      "who": "romanMan2"
+     }
+    ]
+   },
+   "num": 7,
+   "texts": [
+    {
+     "text": "DORMICE",
+     "y": 1500,
+     "size": 150,
+     "style": "stamp",
+     "color": "gold",
+     "t": 0.3
+    }
+   ],
+   "sfx": "pop"
+  },
+  {
+   "at": "fattened up",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans/jar.jpg",
+    "prompt": "Photorealistic, vivid full colour, cinematic daylight, ancient Rome. A Roman man in a tunic peering into a big round terracotta jar with holes in it, holding up a very chubby fat dormouse in his other hand, framed from the waist up.",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "romanMan2"
+     }
+    ]
+   },
+   "texts": [
+    {
+     "text": "YUM?",
+     "y": 1500,
+     "size": 150,
+     "style": "stamp",
+     "color": "gold",
+     "t": 0.3
+    }
+   ],
+   "sfx": "ding"
+  },
+  {
+   "at": "six",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans/oil.jpg",
+    "prompt": "Photorealistic, vivid full colour, cinematic daylight, ancient Rome. A Roman bathhouse with steamy marble pool: a muscular man wearing only a towel at the waist sitting on a bench while an attendant pours shiny olive oil from a small flask over his shoulders.",
+    "heads": [
+     {
+      "x": 420,
+      "y": 500,
+      "r": 110,
+      "who": "bather"
+     },
+     {
+      "x": 760,
+      "y": 420,
+      "r": 95,
+      "who": "romanMan"
+     }
+    ]
+   },
+   "num": 6,
+   "texts": [
+    {
+     "text": "NO SOAP",
+     "y": 1500,
+     "size": 150,
+     "style": "stamp",
+     "color": "gold",
+     "t": 0.3
+    }
+   ],
+   "sfx": "pop"
+  },
+  {
+   "at": "and scraped",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans/strigil.jpg",
+    "prompt": "Photorealistic, vivid full colour, cinematic daylight, ancient Rome. A man in a Roman bathhouse wearing a towel at the waist scraping dirty oil off his arm with a curved bronze metal scraper, grey gunk dripping off, framed from the waist up.",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "bather"
+     }
+    ]
+   },
+   "texts": [
+    {
+     "text": "STRIGIL",
+     "y": 1500,
+     "size": 150,
+     "style": "stamp",
+     "color": "gold",
+     "t": 0.3
+    }
+   ],
+   "sfx": "thud"
+  },
+  {
+   "at": "five",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans/latrine.jpg",
+    "prompt": "Photorealistic, vivid full colour, cinematic daylight, ancient Rome. A long ancient Roman public latrine: a marble bench with a row of holes and five Roman men in tunics sitting shoulder to shoulder on it, chatting and reading scrolls, no walls between them, wide shot.",
+    "heads": [
+     {
+      "x": 200,
+      "y": 600,
+      "r": 80,
+      "who": "romanMan"
+     },
+     {
+      "x": 420,
+      "y": 590,
+      "r": 80,
+      "who": "romanMan2"
+     },
+     {
+      "x": 640,
+      "y": 600,
+      "r": 80,
+      "who": "fuller"
+     },
+     {
+      "x": 860,
+      "y": 600,
+      "r": 80,
+      "who": "romanCook"
+     }
+    ]
+   },
+   "num": 5,
+   "texts": [
+    {
+     "text": "NO WALLS",
+     "y": 1500,
+     "size": 150,
+     "style": "stamp",
+     "color": "gold",
+     "t": 0.3
+    }
+   ],
+   "sfx": "pop"
+  },
+  {
+   "at": "four",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans/sponge.jpg",
+    "prompt": "Photorealistic, vivid full colour, cinematic daylight, ancient Rome. A Roman man in a tunic holding up a natural sea sponge tied to the end of a wooden stick, inspecting it with a puzzled frown, framed from the waist up, stone latrine behind him.",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "romanMan"
+     }
+    ]
+   },
+   "num": 4,
+   "texts": [
+    {
+     "text": "TOILET PAPER",
+     "y": 1500,
+     "size": 150,
+     "style": "stamp",
+     "color": "gold",
+     "t": 0.3
+    }
+   ],
+   "sfx": "pop"
+  },
+  {
+   "at": "probably shared",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans/shared.jpg",
+    "prompt": "Photorealistic, vivid full colour, cinematic daylight, ancient Rome. Two Roman men on a stone latrine bench, one politely handing a sponge on a stick to the other, who leans away disgusted, both in tunics.",
+    "heads": [
+     {
+      "x": 330,
+      "y": 500,
+      "r": 110,
+      "who": "romanMan2"
+     },
+     {
+      "x": 760,
+      "y": 520,
+      "r": 110,
+      "who": "fuller"
+     }
+    ]
+   },
+   "texts": [
+    {
+     "text": "SHARED!",
+     "y": 1500,
+     "size": 150,
+     "style": "stamp",
+     "color": "gold",
+     "t": 0.3
+    }
+   ],
+   "sfx": "thud",
+   "fx": [
+    "shake"
+   ]
+  },
+  {
+   "at": "three",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans/fullers.jpg",
+    "prompt": "Photorealistic, vivid full colour, cinematic daylight, ancient Rome. A Roman laundry workshop: three workers in short tunics standing in big stone tubs filled with yellow liquid, stomping on wet clothes with their bare feet, wide shot.",
+    "heads": [
+     {
+      "x": 270,
+      "y": 520,
+      "r": 90,
+      "who": "fuller"
+     },
+     {
+      "x": 540,
+      "y": 500,
+      "r": 90,
+      "who": "romanMan2"
+     },
+     {
+      "x": 810,
+      "y": 520,
+      "r": 90,
+      "who": "romanCook"
+     }
+    ]
+   },
+   "num": 3,
+   "texts": [
+    {
+     "text": "PEE LAUNDRY",
+     "y": 1500,
+     "size": 150,
+     "style": "stamp",
+     "color": "gold",
+     "t": 0.3
+    }
+   ],
+   "sfx": "pop"
+  },
+  {
+   "at": "two the emperor",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans/vespasian.jpg",
+    "prompt": "Photorealistic, vivid full colour, cinematic daylight, ancient Rome. A stern bald older Roman emperor with a heavy wrinkled face, wearing a purple toga and a golden laurel wreath, seated on a marble throne, holding a bulging bag of gold coins, framed from the waist up.",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "vespasian"
+     }
+    ]
+   },
+   "num": 2,
+   "texts": [
+    {
+     "text": "PEE TAX",
+     "y": 1500,
+     "size": 150,
+     "style": "stamp",
+     "color": "gold",
+     "t": 0.3
+    }
+   ],
+   "sfx": "pop"
+  },
+  {
+   "at": "money doesn't stink",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans/coin.jpg",
+    "prompt": "Photorealistic, vivid full colour, cinematic daylight, ancient Rome. A bald older Roman emperor in a purple toga and laurel wreath happily sniffing a gold coin held up to his nose, smiling, palace columns behind, framed from the waist up.",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "vespasian"
+     }
+    ]
+   },
+   "texts": [
+    {
+     "text": "MONEY DOESN'T STINK",
+     "y": 1500,
+     "size": 110,
+     "style": "stamp",
+     "color": "gold",
+     "t": 0.3
+    }
+   ],
+   "sfx": "ding"
+  },
+  {
+   "at": "and number one",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans/teeth.jpg",
+    "prompt": "Photorealistic, vivid full colour, cinematic daylight, ancient Rome. A Roman man in a toga grinning hugely, showing dazzling bright white teeth, holding up a small clay cup of yellow liquid, framed from the waist up, sunny courtyard.",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "romanMan2"
+     }
+    ]
+   },
+   "num": 1,
+   "texts": [
+    {
+     "text": "WHITE TEETH",
+     "y": 1500,
+     "size": 150,
+     "style": "stamp",
+     "color": "gold",
+     "t": 0.3
+    }
+   ],
+   "sfx": "whoosh",
+   "fx": [
+    "flash"
+   ]
+  },
+  {
+   "at": "a poet even",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans/poet.jpg",
+    "prompt": "Photorealistic, vivid full colour, cinematic daylight, ancient Rome. A bearded Roman poet in a toga holding a scroll and pointing and laughing at a grinning man with white teeth while a small crowd laughs, Roman street.",
+    "heads": [
+     {
+      "x": 360,
+      "y": 460,
+      "r": 110,
+      "who": "poet"
+     },
+     {
+      "x": 770,
+      "y": 500,
+      "r": 105,
+      "who": "romanMan2"
+     }
+    ]
+   },
+   "texts": [
+    {
+     "text": "ROASTED",
+     "y": 1500,
+     "size": 150,
+     "style": "stamp",
+     "color": "gold",
+     "t": 0.3
+    }
+   ],
+   "sfx": "thud"
+  },
+  {
+   "at": "follow for more",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans/follow.jpg",
+    "prompt": "Photorealistic, vivid full colour, cinematic daylight, ancient Rome. A group of five cheerful ancient Romans in togas and tunics standing together in the sunny Forum, all waving at the camera, wide shot.",
+    "heads": [
+     {
+      "x": 200,
+      "y": 560,
+      "r": 80,
+      "who": "romanMan"
+     },
+     {
+      "x": 400,
+      "y": 540,
+      "r": 80,
+      "who": "romanWoman"
+     },
+     {
+      "x": 600,
+      "y": 530,
+      "r": 85,
+      "who": "vespasian"
+     },
+     {
+      "x": 820,
+      "y": 560,
+      "r": 80,
+      "who": "romanCook"
+     }
+    ]
+   },
+   "texts": [
+    {
+     "text": "FOLLOW!",
+     "y": 1500,
+     "size": 170,
+     "style": "stamp",
+     "color": "gold",
+     "t": 0.3
+    }
+   ],
+   "sfx": "pop"
+  }
+ ]
+}

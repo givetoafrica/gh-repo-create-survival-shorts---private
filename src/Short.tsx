@@ -6,7 +6,7 @@ import {Vignette} from './sets/Sets';
 import {THEMES, Theme} from './themes';
 import {buildPages} from './timing';
 import {Caption, Episode} from './types';
-import {MouthContext, visemeAt} from './rig/lipsync';
+import {CLOSED, MouthContext, visemeAt} from './rig/lipsync';
 
 export type ShortProps = {
 	episodeId: string;
@@ -53,6 +53,35 @@ const Background: React.FC<{theme: Theme}> = ({theme}) => {
 				<path key={x} d={`M${x},1406 L${x + 50},1406`} stroke={theme.ground} strokeWidth={4} opacity={0.4} strokeLinecap="round" />
 			))}
 		</g>
+	);
+};
+
+// Explainer captions: one word at a time, big, in the middle of the frame (over the body), like the reference channel.
+const WordCaption: React.FC<{caps: Caption[]; theme: Theme}> = ({caps, theme}) => {
+	const frame = useCurrentFrame();
+	const {fps} = useVideoConfig();
+	const t = frame / fps;
+	let w: Caption | undefined;
+	for (const c of caps) if (t >= c.startMs / 1000 - 0.03) w = c; else break;
+	if (!w || t > w.endMs / 1000 + 0.35) return null;
+	const k = spring({frame: (t - w.startMs / 1000) * fps, fps, config: {damping: 11, stiffness: 260}});
+	const text = w.text.replace(/^["“]|["”.,!?;:…]+$/g, '').replace(/\.\.\.$/, '');
+	return (
+		<div style={{position: 'absolute', left: 0, right: 0, top: 1060, display: 'flex', justifyContent: 'center'}}>
+			<span style={{fontFamily: theme.captionFont, fontSize: 132, color: '#FFFFFF', WebkitTextStroke: '18px #111', paintOrder: 'stroke fill',
+				transform: `scale(${0.6 + 0.4 * k}) rotate(-2deg)`, display: 'inline-block', textShadow: '0 10px 0 rgba(0,0,0,0.35)'}}>{text}</span>
+		</div>
+	);
+};
+
+// Explainer countdown number in the top-left corner ("10.", "9." ...), pops in when it changes.
+const CornerNumber: React.FC<{num: number; since: number; theme: Theme}> = ({num, since, theme}) => {
+	const frame = useCurrentFrame();
+	const {fps} = useVideoConfig();
+	const k = spring({frame: frame - since, fps, config: {damping: 9, stiffness: 240}});
+	return (
+		<div style={{position: 'absolute', left: 70, top: 150, fontFamily: theme.captionFont, fontSize: 190, color: '#FFFFFF', WebkitTextStroke: '20px #111',
+			paintOrder: 'stroke fill', transform: `scale(${k}) rotate(-6deg)`, transformOrigin: 'left top', textShadow: '0 12px 0 rgba(0,0,0,0.35)'}}>{num}.</div>
 	);
 };
 
@@ -105,9 +134,13 @@ export const Short: React.FC<ShortProps> = ({episode, captions, starts, duckStar
 	const total = durationSec ?? 60;
 	const t = frame / fps;
 	const d = episode.duck;
+	const explainer = episode.format === 'explainer';
+	// current countdown number = latest scene with "num" that has started
+	let numIdx = -1;
+	episode.scenes.forEach((sc, i) => { if (sc.num !== undefined && t >= starts[i]) numIdx = i; });
 	const duckK = duckStart !== undefined && t >= duckStart && t < duckStart + d.dur ? spring({frame: (t - duckStart) * fps, fps, config: {damping: 10}}) : 0;
 	return (
-		<MouthContext.Provider value={visemeAt(captions, (frame / fps) * 1000)}>
+		<MouthContext.Provider value={explainer ? CLOSED : visemeAt(captions, (frame / fps) * 1000)}>
 		<AbsoluteFill style={{backgroundColor: theme.bg}}>
 			<svg width={1080} height={1920} viewBox="0 0 1080 1920" style={{position: 'absolute'}}>
 				<defs>
@@ -130,7 +163,7 @@ export const Short: React.FC<ShortProps> = ({episode, captions, starts, duckStar
 						const to = Math.round((i + 1 < starts.length ? starts[i + 1] : total) * fps);
 						return (
 							<Sequence key={i} from={from} durationInFrames={Math.max(1, to - from)} layout="none">
-								<Scene spec={sc} theme={theme} dur={(to - from) / fps} painted={episode.painted} />
+								<Scene spec={sc} theme={theme} dur={(to - from) / fps} painted={episode.painted} explainer={explainer} />
 							</Sequence>
 						);
 					})}
@@ -142,7 +175,8 @@ export const Short: React.FC<ShortProps> = ({episode, captions, starts, duckStar
 				</g>
 				<Vignette theme={theme} />
 			</svg>
-			<Captions caps={captions} theme={theme} />
+			{explainer ? <WordCaption caps={captions} theme={theme} /> : <Captions caps={captions} theme={theme} />}
+			{explainer && numIdx >= 0 ? <CornerNumber key={numIdx} num={episode.scenes[numIdx].num!} since={Math.round(starts[numIdx] * fps)} theme={theme} /> : null}
 			{episode.voice ? <Audio src={staticFile(episode.voice)} /> : null}
 			{episode.scenes.map((sc, i) =>
 				i > 0 && sc.sfx !== 'none' ? (

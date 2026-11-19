@@ -76,6 +76,7 @@ export type SceneSpec = {
 	set?: SetName; // backdrop
 	cam?: 'normal' | 'close' | 'closeLeft' | 'closeRight'; // framing
 	sfx?: 'whoosh' | 'pop' | 'thud' | 'ding' | 'none';
+	num?: number; // explainer: the countdown number shown in the corner from this scene on (10, 9, ... 1)
 };
 
 export type Episode = {
@@ -87,5 +88,7 @@ export type Episode = {
 	duck: {at: string; x: number; y: number; dur: number; scale?: number; rot?: number};
 	scenes: SceneSpec[];
 	tailSec?: number;
+	// 'explainer' = narrator voice only: nobody lip-syncs, photos stay in full colour, one big word at a time mid-screen, countdown number in the corner.
+	format?: 'host' | 'explainer';
 	painted?: Record<string, string>; // filled in at render time: set -> public/bg/<episode>/<set>.jpg or bg/<set>.jpg
 };

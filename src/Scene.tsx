@@ -191,7 +191,7 @@ const SpeedLines: React.FC<{theme: Theme; frame: number}> = ({theme, frame}) => 
 	</g>
 );
 
-export const Scene: React.FC<{spec: SceneSpec; theme: Theme; dur: number; painted?: Record<string, string>}> = ({spec, theme, dur, painted}) => {
+export const Scene: React.FC<{spec: SceneSpec; theme: Theme; dur: number; painted?: Record<string, string>; explainer?: boolean}> = ({spec, theme, dur, painted, explainer}) => {
 	const frame = useCurrentFrame();
 	const {fps} = useVideoConfig();
 	const t = frame / fps;
@@ -209,7 +209,7 @@ export const Scene: React.FC<{spec: SceneSpec; theme: Theme; dur: number; painte
 	const camY = cam === 'normal' ? 900 : 780;
 	return (
 		<>
-			{spec.photo ? <PhotoShot p={spec.photo} t={t} dur={dur} punch={punch} sx={sx} sy={sy} /> : null}
+			{spec.photo ? <PhotoShot p={spec.photo} t={t} dur={dur} punch={punch} sx={sx} sy={sy} explainer={explainer} /> : null}
 			<g transform={`translate(${540 + sx},${1100 + sy}) scale(${zoom * punch * camZ}) translate(${-camX},${-camY})`}>
 				{spec.photo ? null : spec.set && spec.set !== 'none' && painted?.[spec.set] ? (
 					<>
@@ -246,13 +246,14 @@ export const Scene: React.FC<{spec: SceneSpec; theme: Theme; dur: number; painte
 	);
 };
 
-const PhotoShot: React.FC<{p: PhotoSpec; t: number; dur: number; punch: number; sx: number; sy: number}> = ({p, t, dur, punch, sx, sy}) => {
+const PhotoShot: React.FC<{p: PhotoSpec; t: number; dur: number; punch: number; sx: number; sy: number; explainer?: boolean}> = ({p, t, dur, punch, sx, sy, explainer}) => {
 	const z = (1 + (p.zoom ?? 0.06) * Math.min(1, t / Math.max(dur, 0.1))) * punch;
 	const fxp = p.focusX ?? 540;
 	const fyp = p.focusY ?? 800;
 	// Flashback = old-film look so viewers instantly see "this is the past": sepia/B&W, grain, scratches, flicker.
 	// Default: any shot where nobody talks (history people) is a flashback; the talking host stays in full colour.
-	const era = p.era ?? (p.heads.some((h, i) => h.talks ?? i === 0) ? 'now' : 'sepia');
+	// Explainer videos stay in full colour (no host to contrast with) unless a shot asks for a flashback.
+	const era = p.era ?? (explainer || p.heads.some((h, i) => h.talks ?? i === 0) ? 'now' : 'sepia');
 	const past = era !== 'now';
 	const f = Math.floor(t * 24); // old film runs at 24 fps: grain/scratches jump on that beat
 	const flicker = past ? 0.95 + random(`fl${f}`) * 0.05 : 1;
@@ -291,7 +292,7 @@ const PhotoShot: React.FC<{p: PhotoSpec; t: number; dur: number; punch: number; 
 						const st = h.who ? CAST_HEADS[h.who] : undefined;
 						const blinkT = (t * 1000 + i * 1300) % 3100;
 						const bob = Math.sin(t * 2.2 + i) * 3;
-						return <CartoonHead key={i} x={h.x} y={h.y + bob} r={h.r} rot={(h.rot ?? 0) + Math.sin(t * 1.7 + i) * 2} style={st} talking={h.talks ?? i === 0} blink={blinkT < 120} look={h.look ?? 0} />;
+						return <CartoonHead key={i} x={h.x} y={h.y + bob} r={h.r} rot={(h.rot ?? 0) + Math.sin(t * 1.7 + i) * 2} style={st} talking={!explainer && (h.talks ?? i === 0)} blink={blinkT < 120} look={h.look ?? 0} />;
 					})}
 				</g>
 			</g>
