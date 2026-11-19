@@ -61,3 +61,5 @@ CAST_HEADS.bather = {skin: '#DDA77C', hair: '#2b2b2b', hairStyle: 'short', beard
 CAST_HEADS.fuller = {skin: '#D79F72', hair: '#4a3020', hairStyle: 'wild', brow: -1};
 CAST_HEADS.vespasian = {skin: '#EDC09A', hair: '#8f8f8f', hairStyle: 'none', brow: 1};
 CAST_HEADS.poet = {skin: '#EFC6A0', hair: '#3a2614', hairStyle: 'wild', beard: 'full'};
+// Romans v3: the ONE bewildered Roman who appears in every scene (moods escalate per scene).
+CAST_HEADS.romanHero = {skin:'#E6B48C', hair:'#2b2b2b', hairStyle:'short', brow:1};

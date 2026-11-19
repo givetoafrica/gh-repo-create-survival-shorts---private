@@ -1,0 +1,474 @@
+{
+ "id": "romans3",
+ "title": "10 Weird Things You Didn't Know About Ancient Roman Life",
+ "theme": "classic",
+ "format": "explainer",
+ "voice": "episodes/romans3/voice.mp3",
+ "captions": "episodes/romans3/captions.json",
+ "duck": {
+  "at": "wooden sandals",
+  "x": 930,
+  "y": 1700,
+  "dur": 2.5,
+  "scale": 0.45
+ },
+ "_note": "v3 from victoria's script. ONE hero (romanHero) in every scene, mood escalates calm->shocked->disgusted->scared->angry. heads[].x/y/r are guesses: run the head-fit step. 'mood' = frozen face per head (rename to the rig's field if different). Prop shots have no heads. Cut every ~2.3 s.",
+ "scenes": [
+  {
+   "at": "ancient romans",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans3/hook.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 430,
+      "r": 110,
+      "who": "romanHero",
+      "mood": "calm"
+     }
+    ]
+   },
+   "sfx": "whoosh",
+   "fx": [
+    "flash"
+   ]
+  },
+  {
+   "at": "laundry service",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans3/close-hero.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 520,
+      "r": 170,
+      "who": "romanHero",
+      "mood": "shocked"
+     }
+    ]
+   }
+  },
+  {
+   "at": "some public toilets",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans3/toilet.jpg",
+    "heads": [
+     {
+      "x": 360,
+      "y": 520,
+      "r": 100,
+      "who": "romanHero",
+      "mood": "shocked"
+     },
+     {
+      "x": 720,
+      "y": 500,
+      "r": 100,
+      "who": "bather",
+      "mood": "happy"
+     }
+    ]
+   },
+   "num": 10,
+   "sfx": "pop"
+  },
+  {
+   "at": "imagine making",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans3/close-hero.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 520,
+      "r": 170,
+      "who": "romanHero",
+      "mood": "scared"
+     }
+    ]
+   }
+  },
+  {
+   "at": "bathers used oil",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans3/scraper.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 430,
+      "r": 110,
+      "who": "romanHero",
+      "mood": "disgusted"
+     }
+    ]
+   },
+   "num": 9,
+   "sfx": "pop"
+  },
+  {
+   "at": "scraper to remove",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans3/prop-strigil.jpg",
+    "heads": []
+   }
+  },
+  {
+   "at": "congratulations",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans3/scraper.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 430,
+      "r": 110,
+      "who": "romanHero",
+      "mood": "disgusted"
+     }
+    ]
+   }
+  },
+  {
+   "at": "hair plucking",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans3/pluck.jpg",
+    "heads": [
+     {
+      "x": 420,
+      "y": 480,
+      "r": 100,
+      "who": "romanHero",
+      "mood": "scared"
+     },
+     {
+      "x": 700,
+      "y": 470,
+      "r": 100,
+      "who": "romanMan2",
+      "mood": "smug"
+     }
+    ]
+   },
+   "num": 8,
+   "sfx": "pop"
+  },
+  {
+   "at": "attack your armpits",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans3/close-hero.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 520,
+      "r": 170,
+      "who": "romanHero",
+      "mood": "scared"
+     }
+    ]
+   }
+  },
+  {
+   "at": "bathhouses even",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans3/poetry.jpg",
+    "heads": [
+     {
+      "x": 420,
+      "y": 560,
+      "r": 100,
+      "who": "romanHero",
+      "mood": "disgusted"
+     },
+     {
+      "x": 720,
+      "y": 440,
+      "r": 100,
+      "who": "poet",
+      "mood": "happy"
+     }
+    ]
+   },
+   "num": 7,
+   "sfx": "pop"
+  },
+  {
+   "at": "wet trapped",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans3/prop-scroll.jpg",
+    "heads": []
+   }
+  },
+  {
+   "at": "somebodys performing",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans3/poetry.jpg",
+    "heads": [
+     {
+      "x": 420,
+      "y": 560,
+      "r": 100,
+      "who": "romanHero",
+      "mood": "scared"
+     },
+     {
+      "x": 720,
+      "y": 440,
+      "r": 100,
+      "who": "poet",
+      "mood": "grin"
+     }
+    ]
+   }
+  },
+  {
+   "at": "some hot room",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans3/sandals.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 430,
+      "r": 110,
+      "who": "romanHero",
+      "mood": "scared"
+     }
+    ]
+   },
+   "num": 6,
+   "sfx": "pop"
+  },
+  {
+   "at": "the building was",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans3/prop-sandals.jpg",
+    "heads": []
+   }
+  },
+  {
+   "at": "pompeii had",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans3/snackbar.jpg",
+    "heads": [
+     {
+      "x": 380,
+      "y": 480,
+      "r": 100,
+      "who": "romanHero",
+      "mood": "shocked"
+     },
+     {
+      "x": 720,
+      "y": 440,
+      "r": 100,
+      "who": "romanCook",
+      "mood": "grin"
+     }
+    ]
+   },
+   "num": 5,
+   "sfx": "pop"
+  },
+  {
+   "at": "our ice cream",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans3/prop-icecream.jpg",
+    "heads": []
+   }
+  },
+  {
+   "at": "people wrote graffiti",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans3/graffiti.jpg",
+    "heads": [
+     {
+      "x": 680,
+      "y": 470,
+      "r": 100,
+      "who": "romanHero",
+      "mood": "shocked"
+     },
+     {
+      "x": 380,
+      "y": 470,
+      "r": 100,
+      "who": "romanMan2",
+      "mood": "angry"
+     }
+    ]
+   },
+   "num": 4,
+   "sfx": "pop"
+  },
+  {
+   "at": "comment section",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans3/close-hero.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 520,
+      "r": 170,
+      "who": "romanHero",
+      "mood": "disgusted"
+     }
+    ]
+   }
+  },
+  {
+   "at": "at bath",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans3/curse.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 430,
+      "r": 110,
+      "who": "romanHero",
+      "mood": "angry"
+     }
+    ]
+   },
+   "num": 3,
+   "sfx": "pop"
+  },
+  {
+   "at": "revenge",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans3/prop-curse.jpg",
+    "heads": []
+   }
+  },
+  {
+   "at": "ancient customer",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans3/curse.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 430,
+      "r": 110,
+      "who": "romanHero",
+      "mood": "angry"
+     }
+    ]
+   }
+  },
+  {
+   "at": "fullers used",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans3/fullers.jpg",
+    "heads": [
+     {
+      "x": 640,
+      "y": 470,
+      "r": 100,
+      "who": "romanHero",
+      "mood": "disgusted"
+     },
+     {
+      "x": 380,
+      "y": 480,
+      "r": 100,
+      "who": "fuller",
+      "mood": "happy"
+     }
+    ]
+   },
+   "num": 2,
+   "sfx": "pop"
+  },
+  {
+   "at": "your questions",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans3/close-hero.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 520,
+      "r": 170,
+      "who": "romanHero",
+      "mood": "disgusted"
+     }
+    ]
+   }
+  },
+  {
+   "at": "and vespasian",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans3/taxman.jpg",
+    "heads": [
+     {
+      "x": 680,
+      "y": 480,
+      "r": 100,
+      "who": "romanHero",
+      "mood": "scared"
+     },
+     {
+      "x": 380,
+      "y": 450,
+      "r": 100,
+      "who": "vespasian",
+      "mood": "smug"
+     }
+    ]
+   },
+   "num": 1,
+   "sfx": "pop"
+  },
+  {
+   "at": "even your bladder",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans3/prop-purse.jpg",
+    "heads": []
+   }
+  },
+  {
+   "at": "keep going",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/romans3/final.jpg",
+    "heads": [
+     {
+      "x": 380,
+      "y": 520,
+      "r": 100,
+      "who": "romanHero",
+      "mood": "scared"
+     },
+     {
+      "x": 700,
+      "y": 500,
+      "r": 100,
+      "who": "vespasian",
+      "mood": "smug"
+     }
+    ]
+   },
+   "sfx": "thud"
+  }
+ ]
+}
