@@ -1,0 +1,757 @@
+[
+{
+"text": "STOP",
+"startMs": 80,
+"endMs": 400
+},
+{
+"text": "scrolling!",
+"startMs": 560,
+"endMs": 1400
+},
+{
+"text": "This",
+"startMs": 1600,
+"endMs": 1760
+},
+{
+"text": "president",
+"startMs": 1840,
+"endMs": 2240
+},
+{
+"text": "got",
+"startMs": 2320,
+"endMs": 2560
+},
+{
+"text": "SHOT...",
+"startMs": 2640,
+"endMs": 3440
+},
+{
+"text": "and",
+"startMs": 3560,
+"endMs": 3680
+},
+{
+"text": "kept",
+"startMs": 3840,
+"endMs": 4080
+},
+{
+"text": "TALKING.",
+"startMs": 4120,
+"endMs": 4760
+},
+{
+"text": "Okay.",
+"startMs": 5480,
+"endMs": 5760
+},
+{
+"text": "October,",
+"startMs": 6400,
+"endMs": 7200
+},
+{
+"text": "1912.",
+"startMs": 7280,
+"endMs": 8560
+},
+{
+"text": "Milwaukee.",
+"startMs": 8680,
+"endMs": 9280
+},
+{
+"text": "Teddy",
+"startMs": 9760,
+"endMs": 10000
+},
+{
+"text": "Roosevelt",
+"startMs": 10160,
+"endMs": 10640
+},
+{
+"text": "is",
+"startMs": 10720,
+"endMs": 10800
+},
+{
+"text": "running",
+"startMs": 10880,
+"endMs": 11120
+},
+{
+"text": "for",
+"startMs": 11200,
+"endMs": 11280
+},
+{
+"text": "president...",
+"startMs": 11360,
+"endMs": 12160
+},
+{
+"text": "again.",
+"startMs": 12240,
+"endMs": 12880
+},
+{
+"text": "A",
+"startMs": 13360,
+"endMs": 13440
+},
+{
+"text": "man",
+"startMs": 13520,
+"endMs": 13680
+},
+{
+"text": "in",
+"startMs": 13760,
+"endMs": 13840
+},
+{
+"text": "the",
+"startMs": 13893,
+"endMs": 13947
+},
+{
+"text": "crowd",
+"startMs": 14000,
+"endMs": 14320
+},
+{
+"text": "pulls",
+"startMs": 14400,
+"endMs": 14680
+},
+{
+"text": "out",
+"startMs": 14720,
+"endMs": 14800
+},
+{
+"text": "a",
+"startMs": 14880,
+"endMs": 14920
+},
+{
+"text": "gun",
+"startMs": 14960,
+"endMs": 15280
+},
+{
+"text": "and",
+"startMs": 15360,
+"endMs": 15440
+},
+{
+"text": "shoots",
+"startMs": 15600,
+"endMs": 15880
+},
+{
+"text": "him.",
+"startMs": 15920,
+"endMs": 16160
+},
+{
+"text": "In",
+"startMs": 16560,
+"endMs": 16720
+},
+{
+"text": "the",
+"startMs": 16800,
+"endMs": 16880
+},
+{
+"text": "CHEST.",
+"startMs": 17120,
+"endMs": 17760
+},
+{
+"text": "Now,",
+"startMs": 18240,
+"endMs": 18560
+},
+{
+"text": "that",
+"startMs": 18640,
+"endMs": 18880
+},
+{
+"text": "bullet",
+"startMs": 19040,
+"endMs": 19200
+},
+{
+"text": "should",
+"startMs": 19440,
+"endMs": 19680
+},
+{
+"text": "have",
+"startMs": 19760,
+"endMs": 19840
+},
+{
+"text": "killed",
+"startMs": 19920,
+"endMs": 20160
+},
+{
+"text": "him.",
+"startMs": 20280,
+"endMs": 20600
+},
+{
+"text": "But",
+"startMs": 20800,
+"endMs": 20880
+},
+{
+"text": "in",
+"startMs": 20960,
+"endMs": 21040
+},
+{
+"text": "Teddy's",
+"startMs": 21120,
+"endMs": 21440
+},
+{
+"text": "coat",
+"startMs": 21520,
+"endMs": 21760
+},
+{
+"text": "pocket?",
+"startMs": 21840,
+"endMs": 22400
+},
+{
+"text": "A",
+"startMs": 22560,
+"endMs": 22640
+},
+{
+"text": "fifty-page",
+"startMs": 22800,
+"endMs": 23440
+},
+{
+"text": "speech,",
+"startMs": 23520,
+"endMs": 24160
+},
+{
+"text": "folded",
+"startMs": 24280,
+"endMs": 24480
+},
+{
+"text": "in",
+"startMs": 24560,
+"endMs": 24640
+},
+{
+"text": "half...",
+"startMs": 24720,
+"endMs": 25360
+},
+{
+"text": "and",
+"startMs": 25400,
+"endMs": 25440
+},
+{
+"text": "a",
+"startMs": 25520,
+"endMs": 25600
+},
+{
+"text": "steel",
+"startMs": 25680,
+"endMs": 26000
+},
+{
+"text": "glasses",
+"startMs": 26160,
+"endMs": 26560
+},
+{
+"text": "case.",
+"startMs": 26640,
+"endMs": 27040
+},
+{
+"text": "The",
+"startMs": 27440,
+"endMs": 27520
+},
+{
+"text": "bullet",
+"startMs": 27600,
+"endMs": 27920
+},
+{
+"text": "punches",
+"startMs": 28000,
+"endMs": 28400
+},
+{
+"text": "through",
+"startMs": 28480,
+"endMs": 28640
+},
+{
+"text": "both...",
+"startMs": 28720,
+"endMs": 29440
+},
+{
+"text": "and",
+"startMs": 29520,
+"endMs": 29600
+},
+{
+"text": "stops.",
+"startMs": 29760,
+"endMs": 30400
+},
+{
+"text": "Saved",
+"startMs": 31280,
+"endMs": 31440
+},
+{
+"text": "by",
+"startMs": 31520,
+"endMs": 31680
+},
+{
+"text": "his",
+"startMs": 31760,
+"endMs": 32000
+},
+{
+"text": "OWN",
+"startMs": 32080,
+"endMs": 32400
+},
+{
+"text": "long",
+"startMs": 32480,
+"endMs": 32720
+},
+{
+"text": "speech.",
+"startMs": 32800,
+"endMs": 33360
+},
+{
+"text": "So,",
+"startMs": 33840,
+"endMs": 34240
+},
+{
+"text": "does",
+"startMs": 34400,
+"endMs": 34560
+},
+{
+"text": "he",
+"startMs": 34640,
+"endMs": 34720
+},
+{
+"text": "go",
+"startMs": 34760,
+"endMs": 34800
+},
+{
+"text": "to",
+"startMs": 34880,
+"endMs": 34920
+},
+{
+"text": "the",
+"startMs": 34960,
+"endMs": 35040
+},
+{
+"text": "hospital?",
+"startMs": 35280,
+"endMs": 35600
+},
+{
+"text": "Of",
+"startMs": 35920,
+"endMs": 36080
+},
+{
+"text": "course",
+"startMs": 36240,
+"endMs": 36560
+},
+{
+"text": "not.",
+"startMs": 36640,
+"endMs": 36960
+},
+{
+"text": "He",
+"startMs": 37200,
+"endMs": 37360
+},
+{
+"text": "coughs",
+"startMs": 37400,
+"endMs": 37680
+},
+{
+"text": "into",
+"startMs": 37800,
+"endMs": 37920
+},
+{
+"text": "his",
+"startMs": 38000,
+"endMs": 38080
+},
+{
+"text": "hand.",
+"startMs": 38240,
+"endMs": 38480
+},
+{
+"text": "No",
+"startMs": 38800,
+"endMs": 38880
+},
+{
+"text": "blood?",
+"startMs": 38960,
+"endMs": 39600
+},
+{
+"text": "Lungs",
+"startMs": 39680,
+"endMs": 39920
+},
+{
+"text": "are",
+"startMs": 39960,
+"endMs": 40000
+},
+{
+"text": "fine.",
+"startMs": 40080,
+"endMs": 40720
+},
+{
+"text": "Showtime!",
+"startMs": 40880,
+"endMs": 41680
+},
+{
+"text": "He",
+"startMs": 42000,
+"endMs": 42160
+},
+{
+"text": "walks",
+"startMs": 42280,
+"endMs": 42480
+},
+{
+"text": "on",
+"startMs": 42520,
+"endMs": 42560
+},
+{
+"text": "stage,",
+"startMs": 42720,
+"endMs": 43280
+},
+{
+"text": "pulls",
+"startMs": 43360,
+"endMs": 43600
+},
+{
+"text": "out",
+"startMs": 43680,
+"endMs": 43760
+},
+{
+"text": "the",
+"startMs": 43800,
+"endMs": 43840
+},
+{
+"text": "speech",
+"startMs": 43920,
+"endMs": 44160
+},
+{
+"text": "with",
+"startMs": 44240,
+"endMs": 44320
+},
+{
+"text": "a",
+"startMs": 44360,
+"endMs": 44400
+},
+{
+"text": "bullet",
+"startMs": 44480,
+"endMs": 44720
+},
+{
+"text": "hole",
+"startMs": 44800,
+"endMs": 44960
+},
+{
+"text": "in",
+"startMs": 45000,
+"endMs": 45040
+},
+{
+"text": "it,",
+"startMs": 45120,
+"endMs": 45360
+},
+{
+"text": "and",
+"startMs": 45440,
+"endMs": 45520
+},
+{
+"text": "says:",
+"startMs": 45600,
+"endMs": 46080
+},
+{
+"text": "\"It",
+"startMs": 46240,
+"endMs": 46400
+},
+{
+"text": "takes",
+"startMs": 46560,
+"endMs": 46720
+},
+{
+"text": "more",
+"startMs": 46800,
+"endMs": 46960
+},
+{
+"text": "than",
+"startMs": 47080,
+"endMs": 47200
+},
+{
+"text": "that",
+"startMs": 47320,
+"endMs": 47440
+},
+{
+"text": "to",
+"startMs": 47520,
+"endMs": 47680
+},
+{
+"text": "kill",
+"startMs": 47800,
+"endMs": 47920
+},
+{
+"text": "a",
+"startMs": 47960,
+"endMs": 48000
+},
+{
+"text": "Bull",
+"startMs": 48160,
+"endMs": 48320
+},
+{
+"text": "Moose.\"",
+"startMs": 48400,
+"endMs": 49280
+},
+{
+"text": "Then",
+"startMs": 49360,
+"endMs": 49600
+},
+{
+"text": "he",
+"startMs": 49760,
+"endMs": 49920
+},
+{
+"text": "talks",
+"startMs": 50040,
+"endMs": 50240
+},
+{
+"text": "for",
+"startMs": 50320,
+"endMs": 50400
+},
+{
+"text": "almost",
+"startMs": 50480,
+"endMs": 50880
+},
+{
+"text": "NINETY",
+"startMs": 51040,
+"endMs": 51440
+},
+{
+"text": "minutes.",
+"startMs": 51600,
+"endMs": 52280
+},
+{
+"text": "Bleeding.",
+"startMs": 52480,
+"endMs": 53240
+},
+{
+"text": "The",
+"startMs": 53440,
+"endMs": 53520
+},
+{
+"text": "doctors",
+"startMs": 53600,
+"endMs": 54000
+},
+{
+"text": "left",
+"startMs": 54080,
+"endMs": 54320
+},
+{
+"text": "that",
+"startMs": 54400,
+"endMs": 54480
+},
+{
+"text": "bullet",
+"startMs": 54560,
+"endMs": 54800
+},
+{
+"text": "in",
+"startMs": 54840,
+"endMs": 54880
+},
+{
+"text": "his",
+"startMs": 54960,
+"endMs": 55040
+},
+{
+"text": "chest...",
+"startMs": 55200,
+"endMs": 55840
+},
+{
+"text": "for",
+"startMs": 55920,
+"endMs": 56000
+},
+{
+"text": "the",
+"startMs": 56040,
+"endMs": 56080
+},
+{
+"text": "rest",
+"startMs": 56240,
+"endMs": 56480
+},
+{
+"text": "of",
+"startMs": 56520,
+"endMs": 56560
+},
+{
+"text": "his",
+"startMs": 56640,
+"endMs": 56720
+},
+{
+"text": "life.",
+"startMs": 56880,
+"endMs": 57280
+},
+{
+"text": "So",
+"startMs": 57760,
+"endMs": 58000
+},
+{
+"text": "next",
+"startMs": 58160,
+"endMs": 58320
+},
+{
+"text": "time",
+"startMs": 58400,
+"endMs": 58560
+},
+{
+"text": "a",
+"startMs": 58600,
+"endMs": 58640
+},
+{
+"text": "meeting",
+"startMs": 58720,
+"endMs": 58960
+},
+{
+"text": "runs",
+"startMs": 59080,
+"endMs": 59200
+},
+{
+"text": "long?",
+"startMs": 59280,
+"endMs": 59600
+},
+{
+"text": "At",
+"startMs": 60000,
+"endMs": 60080
+},
+{
+"text": "least",
+"startMs": 60160,
+"endMs": 60400
+},
+{
+"text": "nobody's",
+"startMs": 60480,
+"endMs": 60960
+},
+{
+"text": "bleeding.",
+"startMs": 61040,
+"endMs": 61920
+}
+]

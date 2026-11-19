@@ -1,0 +1,644 @@
+{
+ "id": "roosevelt",
+ "title": "This president got SHOT and kept TALKING",
+ "theme": "classic",
+ "voice": "episodes/roosevelt/voice.mp3",
+ "captions": "episodes/roosevelt/captions.json",
+ "duck": {
+  "at": "showtime",
+  "x": 960,
+  "y": 1352,
+  "dur": 3.0,
+  "scale": 0.5
+ },
+ "_note": "Photo look. Fit heads[].x/y/r over each painted face after painting. Only the host talks; history people stay quiet (old-film flashback).",
+ "scenes": [
+  {
+   "at": "stop scrolling",
+   "fx": [
+    "shake",
+    "flash",
+    "speedlines"
+   ],
+   "texts": [
+    {
+     "text": "STOP!",
+     "y": 560,
+     "size": 260,
+     "style": "stamp",
+     "color": "ink",
+     "t": 0.1
+    }
+   ],
+   "props": [],
+   "photo": {
+    "src": "bg/photo/toothbrush/host-stop.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "host",
+      "talks": true
+     }
+    ]
+   }
+  },
+  {
+   "at": "this president",
+   "sfx": "thud",
+   "texts": [
+    {
+     "text": "SHOT",
+     "y": 560,
+     "size": 240,
+     "style": "stamp",
+     "color": "ink",
+     "t": 0.9
+    }
+   ],
+   "props": [],
+   "photo": {
+    "src": "bg/photo/roosevelt/teddy-portrait.jpg",
+    "prompt": "Formal studio portrait photograph of Theodore Roosevelt in 1912: a stocky broad-chested man with a thick brown moustache and small pince-nez glasses, wearing a heavy dark overcoat, white shirt and dark tie, standing proudly with one hand tucked in his coat, plain studio backdrop, framed from the waist up.",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "teddy"
+     }
+    ]
+   }
+  },
+  {
+   "at": "and kept talking",
+   "fx": [
+    "punch"
+   ],
+   "texts": [
+    {
+     "text": "...AND KEPT TALKING",
+     "y": 520,
+     "size": 110,
+     "style": "pop",
+     "color": "ink"
+    }
+   ],
+   "props": [],
+   "photo": {
+    "src": "bg/photo/roosevelt/teddy-speaking.jpg",
+    "prompt": "Theodore Roosevelt in 1912: a stocky broad-chested man with a thick brown moustache and small pince-nez glasses, wearing a heavy dark overcoat, white shirt and dark tie giving a fiery speech on a wooden stage draped with red white and blue bunting, one fist raised, mouth open, framed from the waist up.",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "teddy"
+     }
+    ],
+    "zoom": 0.1
+   }
+  },
+  {
+   "at": "okay october",
+   "fx": [
+    "rewind"
+   ],
+   "texts": [
+    {
+     "text": "OCTOBER 1912",
+     "y": 520,
+     "size": 140,
+     "style": "pop",
+     "color": "ink"
+    }
+   ],
+   "props": [],
+   "photo": {
+    "src": "bg/photo/roosevelt/milwaukee-1912.jpg",
+    "prompt": "A busy street in Milwaukee at night in October 1912: a grand brick hotel entrance with electric signs, a crowd of men in bowler hats and overcoats, an open-top 1912 automobile at the curb, gas street lamps.",
+    "heads": []
+   }
+  },
+  {
+   "at": "teddy roosevelt is running",
+   "texts": [
+    {
+     "text": "PRESIDENT...",
+     "y": 480,
+     "size": 130,
+     "style": "pop",
+     "color": "ink"
+    },
+    {
+     "text": "AGAIN",
+     "y": 660,
+     "size": 170,
+     "style": "stamp",
+     "color": "ink",
+     "t": 2.2
+    }
+   ],
+   "props": [],
+   "photo": {
+    "src": "bg/photo/roosevelt/teddy-car.jpg",
+    "prompt": "Theodore Roosevelt in 1912: a stocky broad-chested man with a thick brown moustache and small pince-nez glasses, wearing a heavy dark overcoat, white shirt and dark tie standing up in the back of an open-top 1912 automobile outside a hotel at night, waving his hat to a cheering crowd, framed from the waist up.",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "teddy"
+     }
+    ]
+   }
+  },
+  {
+   "at": "a man in the crowd",
+   "sfx": "thud",
+   "fx": [
+    "shake"
+   ],
+   "texts": [
+    {
+     "text": "BANG!",
+     "y": 560,
+     "size": 240,
+     "style": "stamp",
+     "color": "ink",
+     "t": 1.5
+    }
+   ],
+   "props": [],
+   "photo": {
+    "src": "bg/photo/roosevelt/schrank-crowd.jpg",
+    "prompt": "A shabby man in a cheap bowler hat and dark coat pushing forward through a crowd at night in 1912, a revolver raised in his hand pointing up to the side, framed from the waist up, angry expression.",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "schrank"
+     }
+    ]
+   }
+  },
+  {
+   "at": "in the chest",
+   "fx": [
+    "shake",
+    "punch"
+   ],
+   "texts": [
+    {
+     "text": "IN THE CHEST",
+     "y": 520,
+     "size": 140,
+     "style": "stamp",
+     "color": "ink"
+    }
+   ],
+   "props": [],
+   "photo": {
+    "src": "bg/photo/roosevelt/teddy-hit.jpg",
+    "prompt": "Theodore Roosevelt in 1912: a stocky broad-chested man with a thick brown moustache and small pince-nez glasses, wearing a heavy dark overcoat, white shirt and dark tie standing in a crowd at night, lurching slightly with one hand pressed flat on the right side of his chest, startled, framed from the waist up.",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "teddy"
+     }
+    ]
+   }
+  },
+  {
+   "at": "now that bullet",
+   "props": [],
+   "texts": [
+    {
+     "text": "SHOULD'VE KILLED HIM",
+     "y": 500,
+     "size": 105,
+     "style": "pop",
+     "color": "ink"
+    }
+   ],
+   "photo": {
+    "src": "bg/photo/toothbrush/host-shock.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "host",
+      "talks": true
+     }
+    ]
+   }
+  },
+  {
+   "at": "but in teddy's",
+   "props": [],
+   "texts": [
+    {
+     "text": "50 PAGES",
+     "y": 520,
+     "size": 190,
+     "style": "stamp",
+     "color": "ink",
+     "t": 1.6
+    }
+   ],
+   "photo": {
+    "src": "bg/photo/roosevelt/speech-pocket.jpg",
+    "prompt": "Close-up still life on a dark wooden table, 1912: a thick 50-page typed speech manuscript folded in half, next to a steel eyeglass case and a pair of pince-nez glasses, warm lamplight.",
+    "heads": [],
+    "zoom": 0.15
+   }
+  },
+  {
+   "at": "the bullet punches",
+   "sfx": "thud",
+   "fx": [
+    "punch"
+   ],
+   "texts": [
+    {
+     "text": "STOPPED",
+     "y": 560,
+     "size": 210,
+     "style": "stamp",
+     "color": "ink",
+     "t": 2.2
+    }
+   ],
+   "props": [],
+   "photo": {
+    "src": "bg/photo/roosevelt/speech-hole.jpg",
+    "prompt": "Extreme close-up of a folded paper speech manuscript from 1912 with a round bullet hole punched straight through the thick stack of pages, scorched edges, a dented steel glasses case beside it, dramatic light.",
+    "heads": [],
+    "zoom": 0.2,
+    "focusY": 0.5
+   }
+  },
+  {
+   "at": "saved by his",
+   "props": [],
+   "texts": [
+    {
+     "text": "SAVED BY A",
+     "y": 470,
+     "size": 110,
+     "style": "pop",
+     "color": "ink"
+    },
+    {
+     "text": "LONG SPEECH",
+     "y": 640,
+     "size": 150,
+     "style": "stamp",
+     "color": "ink",
+     "t": 0.6
+    }
+   ],
+   "photo": {
+    "src": "bg/photo/roosevelt/host-laugh.jpg",
+    "prompt": "a woman in an elegant 18th-century bright red Georgian gown with a white lace collar, auburn hair in a bun stands in a candle-lit Georgian parlour, holding a huge thick stack of papers against her chest and laughing, framed from the waist up.",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "host",
+      "talks": true
+     }
+    ],
+    "era": "now"
+   }
+  },
+  {
+   "at": "so does he go",
+   "props": [],
+   "texts": [
+    {
+     "text": "HOSPITAL?",
+     "y": 520,
+     "size": 170,
+     "style": "pop",
+     "color": "ink"
+    }
+   ],
+   "photo": {
+    "src": "bg/photo/roosevelt/host-shrug.jpg",
+    "prompt": "a woman in an elegant 18th-century bright red Georgian gown with a white lace collar, auburn hair in a bun stands in a candle-lit Georgian parlour, shrugging with both palms up and a sarcastic expression, framed from the waist up.",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "host",
+      "talks": true
+     }
+    ],
+    "era": "now"
+   }
+  },
+  {
+   "at": "of course not",
+   "props": [],
+   "texts": [
+    {
+     "text": "NOPE",
+     "y": 560,
+     "size": 220,
+     "style": "stamp",
+     "color": "ink"
+    }
+   ],
+   "photo": {
+    "src": "bg/photo/roosevelt/host-shrug.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "host",
+      "talks": true
+     }
+    ],
+    "era": "now",
+    "zoom": 0.12
+   }
+  },
+  {
+   "at": "he coughs into",
+   "props": [],
+   "texts": [],
+   "photo": {
+    "src": "bg/photo/roosevelt/teddy-cough.jpg",
+    "prompt": "Theodore Roosevelt in 1912: a stocky broad-chested man with a thick brown moustache and small pince-nez glasses, wearing a heavy dark overcoat, white shirt and dark tie at night in a crowd, coughing into his cupped hand and peering into his palm, framed from the waist up, face still visible above the hand.",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "teddy"
+     }
+    ]
+   }
+  },
+  {
+   "at": "no blood",
+   "props": [],
+   "texts": [
+    {
+     "text": "NO BLOOD",
+     "y": 480,
+     "size": 150,
+     "style": "pop",
+     "color": "ink"
+    },
+    {
+     "text": "= FINE",
+     "y": 650,
+     "size": 170,
+     "style": "stamp",
+     "color": "ink",
+     "t": 0.9
+    }
+   ],
+   "photo": {
+    "src": "bg/photo/roosevelt/teddy-cough.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "teddy"
+     }
+    ],
+    "zoom": 0.14
+   }
+  },
+  {
+   "at": "showtime",
+   "fx": [
+    "flash"
+   ],
+   "texts": [
+    {
+     "text": "SHOWTIME!",
+     "y": 560,
+     "size": 190,
+     "style": "stamp",
+     "color": "ink"
+    }
+   ],
+   "props": [],
+   "photo": {
+    "src": "bg/photo/roosevelt/teddy-stage.jpg",
+    "prompt": "Theodore Roosevelt in 1912: a stocky broad-chested man with a thick brown moustache and small pince-nez glasses, wearing a heavy dark overcoat, white shirt and dark tie striding onto a wooden stage inside a packed 1912 auditorium, flag bunting, bright stage lights, crowd below, framed from the knees up.",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "teddy"
+     }
+    ]
+   }
+  },
+  {
+   "at": "pulls out the speech",
+   "props": [],
+   "texts": [
+    {
+     "text": "BULLET HOLE",
+     "y": 520,
+     "size": 150,
+     "style": "pop",
+     "color": "ink",
+     "t": 1.2
+    }
+   ],
+   "photo": {
+    "src": "bg/photo/roosevelt/teddy-holdspeech.jpg",
+    "prompt": "Theodore Roosevelt in 1912: a stocky broad-chested man with a thick brown moustache and small pince-nez glasses, wearing a heavy dark overcoat, white shirt and dark tie on a stage holding up a folded paper speech with a round bullet hole in it toward the audience, framed from the waist up.",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "teddy"
+     }
+    ]
+   }
+  },
+  {
+   "at": "it takes more",
+   "fx": [
+    "punch"
+   ],
+   "texts": [
+    {
+     "text": "BULL MOOSE",
+     "y": 560,
+     "size": 190,
+     "style": "stamp",
+     "color": "ink",
+     "t": 1.9
+    }
+   ],
+   "props": [],
+   "photo": {
+    "src": "bg/photo/roosevelt/teddy-moose.jpg",
+    "prompt": "Theodore Roosevelt in 1912: a stocky broad-chested man with a thick brown moustache and small pince-nez glasses, wearing a heavy dark overcoat, white shirt and dark tie on a stage shouting defiantly with a fist raised, a large mounted bull moose head with huge antlers hanging on the wall behind him, framed from the waist up.",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "teddy"
+     }
+    ]
+   }
+  },
+  {
+   "at": "then he talks",
+   "texts": [
+    {
+     "text": "90 MINUTES",
+     "y": 540,
+     "size": 200,
+     "style": "stamp",
+     "color": "ink",
+     "t": 1.6
+    }
+   ],
+   "props": [],
+   "photo": {
+    "src": "bg/photo/roosevelt/teddy-long.jpg",
+    "prompt": "Theodore Roosevelt in 1912: a stocky broad-chested man with a thick brown moustache and small pince-nez glasses, wearing a heavy dark overcoat, white shirt and dark tie still speaking at a podium on a stage, sweaty and pale, a dark red stain spreading on his white shirt under his open coat, a big wall clock behind him, framed from the waist up.",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "teddy"
+     }
+    ]
+   }
+  },
+  {
+   "at": "bleeding",
+   "fx": [
+    "shake"
+   ],
+   "texts": [
+    {
+     "text": "BLEEDING",
+     "y": 560,
+     "size": 200,
+     "style": "stamp",
+     "color": "ink"
+    }
+   ],
+   "props": [],
+   "photo": {
+    "src": "bg/photo/roosevelt/teddy-long.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "teddy"
+     }
+    ],
+    "zoom": 0.14
+   }
+  },
+  {
+   "at": "the doctors left",
+   "props": [],
+   "texts": [
+    {
+     "text": "FOREVER",
+     "y": 560,
+     "size": 200,
+     "style": "stamp",
+     "color": "ink",
+     "t": 2.6
+    }
+   ],
+   "photo": {
+    "src": "bg/photo/roosevelt/doctors-xray.jpg",
+    "prompt": "A 1912 hospital room: a bearded doctor with round glasses holding up an old black and white chest x-ray film showing a bullet lodged in the ribs, iron hospital bed behind him, framed from the waist up.",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "doctor1912"
+     }
+    ]
+   }
+  },
+  {
+   "at": "so next time",
+   "props": [],
+   "texts": [
+    {
+     "text": "LONG MEETING?",
+     "y": 520,
+     "size": 150,
+     "style": "pop",
+     "color": "ink"
+    }
+   ],
+   "photo": {
+    "src": "bg/photo/roosevelt/host-meeting.jpg",
+    "prompt": "a woman in an elegant 18th-century bright red Georgian gown with a white lace collar, auburn hair in a bun sitting at a modern glass office meeting table with a laptop and coffee cup, bored, chin resting on her hand, other office workers blurred in the background, framed from the waist up.",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "host",
+      "talks": true
+     }
+    ],
+    "era": "now"
+   }
+  },
+  {
+   "at": "at least nobody's",
+   "props": [],
+   "texts": [
+    {
+     "text": "NOBODY'S BLEEDING",
+     "y": 540,
+     "size": 120,
+     "style": "pop",
+     "color": "ink",
+     "t": 0.4
+    }
+   ],
+   "photo": {
+    "src": "bg/photo/roosevelt/host-whisper.jpg",
+    "prompt": "a woman in an elegant 18th-century bright red Georgian gown with a white lace collar, auburn hair in a bun in a modern office, leaning toward the camera and whispering behind one hand held beside her mouth, smirking, framed from the waist up.",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "host",
+      "talks": true
+     }
+    ],
+    "era": "now"
+   }
+  }
+ ]
+}

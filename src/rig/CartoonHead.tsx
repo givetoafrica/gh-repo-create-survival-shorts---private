@@ -10,6 +10,7 @@ export type HeadStyle = {
 	beard?: 'none' | 'full' | 'moustache' | 'stubble';
 	lashes?: boolean;
 	brow?: number; // 0 calm, 1 raised, -1 cross
+	glasses?: 'none' | 'round' | 'pince-nez';
 };
 
 export const CartoonHead: React.FC<{x: number; y: number; r: number; rot?: number; style?: HeadStyle; talking?: boolean; blink?: boolean; look?: number}> = ({
@@ -54,6 +55,15 @@ export const CartoonHead: React.FC<{x: number; y: number; r: number; rot?: numbe
 			<path d={`M${4 + look * 3},-4 Q${16 + look * 3},18 ${2 + look * 3},24`} stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" />
 			{eye(-32)}
 			{eye(32)}
+			{/* glasses (drawn over the eyes) */}
+			{style.glasses && style.glasses !== 'none' ? (
+				<g fill="none" stroke={ink} strokeWidth={style.glasses === 'round' ? 6 : 4}>
+					<circle cx={-32} cy={-10} r={style.glasses === 'round' ? 27 : 24} fill="#ffffff" fillOpacity={0.12} />
+					<circle cx={32} cy={-10} r={style.glasses === 'round' ? 27 : 24} fill="#ffffff" fillOpacity={0.12} />
+					<path d={style.glasses === 'round' ? 'M-6,-12 Q0,-18 6,-12 M-59,-14 L-86,-20 M59,-14 L86,-20' : 'M-8,-14 Q0,-22 8,-14'} strokeLinecap="round" />
+					{style.glasses === 'pince-nez' ? <path d="M56,-4 Q74,60 50,118" strokeWidth={3} stroke="#2b2b2b" /> : null}
+				</g>
+			) : null}
 			{/* mouth: closed line or open shape that follows the narration */}
 			{open > 0.12 ? (
 				<g>
