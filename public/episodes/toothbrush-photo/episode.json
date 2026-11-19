@@ -1,0 +1,654 @@
+{
+ "id": "toothbrush-photo",
+ "title": "Your toothbrush was invented in JAIL (cartoon-head look)",
+ "theme": "classic",
+ "voice": "episodes/toothbrush/voice.mp3",
+ "captions": "episodes/toothbrush/captions.json",
+ "duck": {
+  "at": "bored",
+  "x": 1000,
+  "y": 1352,
+  "dur": 3.2,
+  "scale": 0.5
+ },
+ "scenes": [
+  {
+   "at": "stop",
+   "fx": [
+    "shake",
+    "flash",
+    "speedlines"
+   ],
+   "texts": [
+    {
+     "text": "STOP!",
+     "y": 560,
+     "size": 260,
+     "t": 0.12
+    }
+   ],
+   "props": [],
+   "photo": {
+    "src": "bg/photo/toothbrush/host-stop.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "host",
+      "talks": true
+     }
+    ]
+   }
+  },
+  {
+   "at": "your toothbrush",
+   "sfx": "thud",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/toothbrush/host-mugshot.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "host",
+      "talks": true
+     }
+    ]
+   }
+  },
+  {
+   "at": "okay rewind",
+   "fx": [
+    "rewind"
+   ],
+   "zoom": 0.02,
+   "texts": [
+    {
+     "text": "REWIND",
+     "y": 520,
+     "size": 170,
+     "style": "pop",
+     "color": "ink"
+    }
+   ],
+   "props": [],
+   "photo": {
+    "src": "bg/photo/toothbrush/host-stop.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "host",
+      "talks": true
+     }
+    ],
+    "zoom": 0.12
+   }
+  },
+  {
+   "at": "five thousand",
+   "texts": [
+    {
+     "text": "5,000",
+     "y": 470,
+     "size": 230,
+     "sub": "YEARS AGO",
+     "style": "stamp",
+     "rot": -6
+    }
+   ],
+   "props": [],
+   "photo": {
+    "src": "bg/photo/toothbrush/caveman.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "caveman",
+      "talks": false
+     }
+    ]
+   }
+  },
+  {
+   "at": "people chewed",
+   "zoom": 0.08,
+   "props": [],
+   "photo": {
+    "src": "bg/photo/toothbrush/cave-chew.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "caveman",
+      "talks": false
+     }
+    ]
+   }
+  },
+  {
+   "at": "stick a stick",
+   "fx": [
+    "punch",
+    "speedlines"
+   ],
+   "sfx": "pop",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/toothbrush/host-twig.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "host",
+      "talks": true
+     }
+    ]
+   }
+  },
+  {
+   "at": "breakfast",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/toothbrush/cave-breakfast.jpg",
+    "heads": [
+     {
+      "x": 330,
+      "y": 500,
+      "r": 105,
+      "who": "caveman",
+      "talks": false
+     },
+     {
+      "x": 750,
+      "y": 500,
+      "r": 105,
+      "who": "cavewoman",
+      "talks": false
+     }
+    ]
+   }
+  },
+  {
+   "at": "then in 1498",
+   "sfx": "thud",
+   "fx": [
+    "shake"
+   ],
+   "texts": [
+    {
+     "text": "1498",
+     "y": 470,
+     "size": 250,
+     "t": 0.35
+    },
+    {
+     "text": "CHINA",
+     "y": 640,
+     "size": 90,
+     "style": "pop",
+     "color": "ink",
+     "t": 0.9
+    }
+   ],
+   "props": [],
+   "photo": {
+    "src": "bg/photo/toothbrush/ming-official.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "ming",
+      "talks": false
+     }
+    ]
+   }
+  },
+  {
+   "at": "with bristles",
+   "props": [],
+   "texts": [
+    {
+     "text": "SIBERIAN PIGS",
+     "y": 520,
+     "size": 120,
+     "t": 1.7,
+     "style": "pop",
+     "color": "ink"
+    }
+   ],
+   "photo": {
+    "src": "bg/photo/toothbrush/host-pig.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "host",
+      "talks": true
+     }
+    ]
+   }
+  },
+  {
+   "at": "minty",
+   "fx": [
+    "punch"
+   ],
+   "texts": [
+    {
+     "text": "MINTY FRESH?",
+     "y": 470,
+     "size": 120,
+     "style": "pop",
+     "color": "ink"
+    },
+    {
+     "text": "NOPE",
+     "y": 640,
+     "size": 170,
+     "style": "stamp",
+     "t": 1.3
+    }
+   ],
+   "props": [],
+   "photo": {
+    "src": "bg/photo/toothbrush/host-facepalm.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "host",
+      "talks": true
+     }
+    ]
+   }
+  },
+  {
+   "at": "now 1770",
+   "sfx": "thud",
+   "fx": [
+    "shake"
+   ],
+   "texts": [
+    {
+     "text": "1770",
+     "y": 470,
+     "size": 250,
+     "t": 0.25
+    },
+    {
+     "text": "ENGLAND",
+     "y": 640,
+     "size": 90,
+     "style": "pop",
+     "color": "ink",
+     "t": 1.0
+    }
+   ],
+   "props": [],
+   "photo": {
+    "src": "bg/photo/toothbrush/addis-street.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "addis",
+      "talks": false
+     }
+    ]
+   }
+  },
+  {
+   "at": "gets thrown",
+   "fx": [
+    "shake"
+   ],
+   "sfx": "thud",
+   "props": [],
+   "texts": [
+    {
+     "text": "RIOT",
+     "x": 230,
+     "y": 470,
+     "size": 140,
+     "style": "stamp",
+     "rot": -12,
+     "t": 1.0
+    }
+   ],
+   "photo": {
+    "src": "bg/photo/toothbrush/addis-arrest.jpg",
+    "heads": [
+     {
+      "x": 330,
+      "y": 500,
+      "r": 105,
+      "who": "jailer",
+      "talks": false
+     },
+     {
+      "x": 750,
+      "y": 500,
+      "r": 105,
+      "who": "addis",
+      "talks": false
+     }
+    ]
+   }
+  },
+  {
+   "at": "bored",
+   "zoom": 0.1,
+   "props": [],
+   "photo": {
+    "src": "bg/photo/toothbrush/addis-bored.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "addis",
+      "talks": false
+     }
+    ]
+   }
+  },
+  {
+   "at": "he saves",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/toothbrush/addis-bone.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "addis",
+      "talks": false
+     }
+    ]
+   }
+  },
+  {
+   "at": "sweet-talks",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/toothbrush/addis-guard.jpg",
+    "heads": [
+     {
+      "x": 330,
+      "y": 500,
+      "r": 105,
+      "who": "addis",
+      "talks": false
+     },
+     {
+      "x": 750,
+      "y": 500,
+      "r": 105,
+      "who": "jailer",
+      "talks": false
+     }
+    ]
+   }
+  },
+  {
+   "at": "boom",
+   "lead": 0.05,
+   "fx": [
+    "flash",
+    "shake",
+    "speedlines"
+   ],
+   "sfx": "thud",
+   "texts": [
+    {
+     "text": "BOOM",
+     "y": 470,
+     "size": 250
+    }
+   ],
+   "props": [],
+   "photo": {
+    "src": "bg/photo/toothbrush/addis-boom.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "addis",
+      "talks": false
+     }
+    ]
+   }
+  },
+  {
+   "at": "invented",
+   "props": [],
+   "texts": [
+    {
+     "text": "INVENTED",
+     "y": 360,
+     "size": 130,
+     "style": "pop",
+     "color": "ink"
+    },
+    {
+     "text": "IN JAIL",
+     "y": 560,
+     "size": 150,
+     "style": "stamp",
+     "t": 0.9
+    }
+   ],
+   "photo": {
+    "src": "bg/photo/toothbrush/addis-boom.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "addis",
+      "talks": false
+     }
+    ],
+    "zoom": 0.12
+   }
+  },
+  {
+   "at": "he gets out",
+   "props": [],
+   "texts": [
+    {
+     "text": "EST. 1780",
+     "x": 720,
+     "y": 700,
+     "size": 80,
+     "style": "pop",
+     "color": "ink",
+     "t": 1.4
+    }
+   ],
+   "photo": {
+    "src": "bg/photo/toothbrush/addis-shop.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "addis",
+      "talks": false
+     }
+    ]
+   }
+  },
+  {
+   "at": "still around",
+   "fx": [
+    "punch"
+   ],
+   "sfx": "ding",
+   "texts": [
+    {
+     "text": "STILL",
+     "y": 450,
+     "size": 230
+    },
+    {
+     "text": "AROUND TODAY",
+     "y": 610,
+     "size": 100,
+     "style": "pop",
+     "color": "ink",
+     "t": 0.4
+    }
+   ],
+   "props": [],
+   "photo": {
+    "src": "bg/photo/toothbrush/host-shock.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "host",
+      "talks": true
+     }
+    ]
+   }
+  },
+  {
+   "at": "then in 1938",
+   "sfx": "thud",
+   "fx": [
+    "shake"
+   ],
+   "texts": [
+    {
+     "text": "1938",
+     "y": 470,
+     "size": 250,
+     "t": 0.3
+    },
+    {
+     "text": "NYLON",
+     "y": 640,
+     "size": 100,
+     "style": "pop",
+     "color": "ink",
+     "t": 1.2
+    }
+   ],
+   "props": [],
+   "photo": {
+    "src": "bg/photo/toothbrush/lab-1938.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "chemist",
+      "talks": false
+     }
+    ]
+   }
+  },
+  {
+   "at": "you're welcome",
+   "props": [],
+   "texts": [
+    {
+     "text": "YOU'RE WELCOME",
+     "y": 500,
+     "size": 110,
+     "style": "pop"
+    }
+   ],
+   "photo": {
+    "src": "bg/photo/toothbrush/host-shock.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "host",
+      "talks": true
+     }
+    ],
+    "zoom": 0.12
+   }
+  },
+  {
+   "at": "so tonight",
+   "props": [],
+   "photo": {
+    "src": "bg/photo/toothbrush/host-brush.jpg",
+    "heads": [
+     {
+      "x": 540,
+      "y": 450,
+      "r": 120,
+      "who": "host",
+      "talks": true
+     }
+    ]
+   }
+  },
+  {
+   "at": "thank a rioter",
+   "fx": [
+    "punch"
+   ],
+   "texts": [
+    {
+     "text": "THANK A RIOTER",
+     "y": 500,
+     "size": 110,
+     "style": "pop"
+    }
+   ],
+   "props": [],
+   "photo": {
+    "src": "bg/photo/toothbrush/host-addis-wave.jpg",
+    "heads": [
+     {
+      "x": 330,
+      "y": 500,
+      "r": 105,
+      "who": "host",
+      "talks": true
+     },
+     {
+      "x": 750,
+      "y": 500,
+      "r": 105,
+      "who": "addis",
+      "talks": false
+     }
+    ]
+   }
+  },
+  {
+   "at": "and one very",
+   "zoom": 0.15,
+   "sfx": "pop",
+   "props": [],
+   "texts": [],
+   "photo": {
+    "src": "bg/photo/toothbrush/pig-nervous.jpg",
+    "heads": []
+   }
+  }
+ ],
+ "_note": "Photo look. heads[].x/y/r = circle over each painted face in 1080x1920 px; fit per image so no real face/hair shows. Only the host talks (lip-sync); history people stay quiet."
+}

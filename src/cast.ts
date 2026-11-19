@@ -46,3 +46,6 @@ export const CAST_HEADS: Record<string, HeadStyle> = {
 	jailer: {skin: '#E9BE98', hair: '#2b2b2b', hairStyle: 'short', beard: 'stubble', brow: -1},
 	galileoLike: {skin: '#F1C9A5', hair: '#9a9a9a', hairStyle: 'wild', beard: 'full'},
 };
+CAST_HEADS.ming = {skin: '#EFC79E', hair: '#151515', hairStyle: 'bun', beard: 'moustache'};
+CAST_HEADS.addis = {skin: '#F3D0B0', hair: '#E8E4DA', hairStyle: 'short', brow: 1};
+CAST_HEADS.chemist = {skin: '#F1CDA8', hair: '#8f8f8f', hairStyle: 'short', beard: 'moustache'};
