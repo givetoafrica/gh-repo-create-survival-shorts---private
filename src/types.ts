@@ -59,6 +59,7 @@ export type PhotoSpec = {
 	src: string; // painted realistic shot in public/ (1080x1920)
 	heads: {x: number; y: number; r: number; rot?: number; who?: string; talks?: boolean; look?: number}[]; // face circles in screen px
 	zoom?: number; // slow push-in, default 0.06
+	era?: 'now' | 'sepia' | 'bw'; // flashback film look; default: sepia when nobody on screen talks
 	focusX?: number; // push-in centre
 	focusY?: number;
 };

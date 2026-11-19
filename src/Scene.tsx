@@ -250,15 +250,63 @@ const PhotoShot: React.FC<{p: PhotoSpec; t: number; dur: number; punch: number; 
 	const z = (1 + (p.zoom ?? 0.06) * Math.min(1, t / Math.max(dur, 0.1))) * punch;
 	const fxp = p.focusX ?? 540;
 	const fyp = p.focusY ?? 800;
+	// Flashback = old-film look so viewers instantly see "this is the past": sepia/B&W, grain, scratches, flicker.
+	// Default: any shot where nobody talks (history people) is a flashback; the talking host stays in full colour.
+	const era = p.era ?? (p.heads.some((h, i) => h.talks ?? i === 0) ? 'now' : 'sepia');
+	const past = era !== 'now';
+	const f = Math.floor(t * 24); // old film runs at 24 fps: grain/scratches jump on that beat
+	const flicker = past ? 0.9 + random(`fl${f}`) * 0.1 : 1;
+	const jitterY = past ? (random(`jy${f}`) - 0.5) * 4 : 0;
+	const intro = past ? Math.max(0, 1 - t / 0.35) : 0; // quick projector flash entering the flashback
+	const matrix = era === 'bw'
+		? '0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0'
+		: '0.393 0.769 0.189 0 0  0.349 0.686 0.168 0 0  0.272 0.534 0.131 0 0  0 0 0 1 0';
+	const fid = `retro-${era}`;
 	return (
-		<g transform={`translate(${fxp + sx},${fyp + sy}) scale(${z}) translate(${-fxp},${-fyp})`}>
-			<image href={staticFile(p.src)} x={0} y={0} width={1080} height={1920} preserveAspectRatio="xMidYMid slice" />
-			{p.heads.map((h, i) => {
-				const st = h.who ? CAST_HEADS[h.who] : undefined;
-				const blinkT = (t * 1000 + i * 1300) % 3100;
-				const bob = Math.sin(t * 2.2 + i) * 3;
-				return <CartoonHead key={i} x={h.x} y={h.y + bob} r={h.r} rot={(h.rot ?? 0) + Math.sin(t * 1.7 + i) * 2} style={st} talking={h.talks ?? i === 0} blink={blinkT < 120} look={h.look ?? 0} />;
-			})}
+		<g>
+			{past ? (
+				<defs>
+					<filter id={fid} colorInterpolationFilters="sRGB">
+						<feColorMatrix type="matrix" values={matrix} />
+						<feComponentTransfer>
+							<feFuncR type="linear" slope={1.12 * flicker} intercept={-0.04} />
+							<feFuncG type="linear" slope={1.12 * flicker} intercept={-0.04} />
+							<feFuncB type="linear" slope={1.12 * flicker} intercept={-0.04} />
+						</feComponentTransfer>
+					</filter>
+					<filter id={`grain-${f}`} x="0" y="0" width="100%" height="100%">
+						<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves={2} seed={f} />
+						<feColorMatrix type="saturate" values="0" />
+					</filter>
+					<radialGradient id="oldvig" cx="50%" cy="45%" r="75%">
+						<stop offset="55%" stopColor="#000" stopOpacity={0} />
+						<stop offset="100%" stopColor="#1a0f05" stopOpacity={0.85} />
+					</radialGradient>
+				</defs>
+			) : null}
+			<g filter={past ? `url(#${fid})` : undefined}>
+				<g transform={`translate(${fxp + sx},${fyp + sy + jitterY}) scale(${z}) translate(${-fxp},${-fyp})`}>
+					<image href={staticFile(p.src)} x={0} y={0} width={1080} height={1920} preserveAspectRatio="xMidYMid slice" />
+					{p.heads.map((h, i) => {
+						const st = h.who ? CAST_HEADS[h.who] : undefined;
+						const blinkT = (t * 1000 + i * 1300) % 3100;
+						const bob = Math.sin(t * 2.2 + i) * 3;
+						return <CartoonHead key={i} x={h.x} y={h.y + bob} r={h.r} rot={(h.rot ?? 0) + Math.sin(t * 1.7 + i) * 2} style={st} talking={h.talks ?? i === 0} blink={blinkT < 120} look={h.look ?? 0} />;
+					})}
+				</g>
+			</g>
+			{past ? (
+				<g pointerEvents="none">
+					<rect width={1080} height={1920} filter={`url(#grain-${f})`} opacity={0.16} style={{mixBlendMode: 'overlay'}} />
+					{[0, 1, 2].map((k) => (random(`sc${k}${f}`) > 0.55 ? <rect key={k} x={random(`sx${k}${f}`) * 1080} y={0} width={2 + random(`sw${k}${f}`) * 3} height={1920} fill="#f4ead2" opacity={0.35} /> : null))}
+					{[0, 1, 2, 3, 4].map((k) => (random(`d${k}${f}`) > 0.6 ? <circle key={`d${k}`} cx={random(`dx${k}${f}`) * 1080} cy={random(`dy${k}${f}`) * 1920} r={2 + random(`dr${k}${f}`) * 6} fill="#120a04" opacity={0.6} /> : null))}
+					<rect width={1080} height={1920} fill="url(#oldvig)" />
+					{/* film-frame bars top and bottom */}
+					<rect width={1080} height={46} fill="#0b0805" />
+					<rect y={1874} width={1080} height={46} fill="#0b0805" />
+					{intro > 0 ? <rect width={1080} height={1920} fill="#fff6e0" opacity={intro * 0.9} /> : null}
+				</g>
+			) : null}
 		</g>
 	);
 };

@@ -646,7 +646,8 @@
    "texts": [],
    "photo": {
     "src": "bg/photo/toothbrush/pig-nervous.jpg",
-    "heads": []
+    "heads": [],
+    "era": "now"
    }
   }
  ],
